@@ -1,0 +1,997 @@
+A
+Account balance/account value
+
+The net amount held at any given time in an account, after factoring in all debits and credits.
+
+AIM (Alternative Investment Market)
+
+A sub-market of the London Stock Exchange (LSE), allowing smaller companies to raise capital with a more flexible regulatory system than is required for the main market of the LSE. CFDs in AIM-listed shares are not available.
+
+Arbitrage
+
+The process of buying an asset (such as shares) and then immediately selling it so as to profit from the difference. Arbitrageurs can exploit tiny differences in the quoted price of an identical instrument across different markets using very large-sized trades.
+
+Ask
+
+The lowest price at which a seller is willing to sell an investment or asset at a given moment. Also known as the offer price.
+
+B
+Backwardation
+
+A theory which says that as a futures contract nears expiry, it will trade at a higher price compared to when it was further from the expiry date. It is a condition that occurs in commodities and futures markets where the price of a given good is higher today than the price in the future. Also see Contango.
+
+Bar chart
+
+A style of chart used in technical analysis, where the top of the vertical line represents the highest price traded in a particular instrument, and the bottom part displays the lowest price. The closing price is shown on the right side of the bar, and the opening price is shown on the left side of the bar. A single bar normally represents one day of trading.
+
+Base currency
+
+The first currency quoted in a currency pair (for example in the GBP/USD currency pair, GBP is the base currency while USD is the quote currency).
+
+Base rate
+
+The lending rate determined by the central bank of a given country.
+
+Basis point
+
+Typically one hundredth of 1%, for example an interest rate cut of 50 basis points is equal to 0.5%.
+
+Bear market
+
+A market distinguished by falling prices and negative sentiment.
+
+Bid
+
+The highest price a buyer is willing to pay for a product is referred to as the ‘bid’. Also see Ask and Offer.
+
+Bid price
+
+The price at which the buyer is willing to purchase at.
+
+Bid-offer spread
+
+The difference between the buying price (offer/ask) and selling price (bid) of a product.
+
+Blue chip
+
+Blue-chip companies are usually well-established, financially sound and better able to weather downturns. As a result, blue-chip stocks are regarded as less volatile. Companies listed in a country’s top tier stock index, such as the UK’s FTSE 100, are considered blue-chips.
+
+Bollinger Bands®
+
+A chart indicator used in technical analysis to measure market volatility, consisting of a single moving average and two standard deviation bands.
+
+Breakout trading
+
+Trading strategies that aim entering CFD trades once the price breaks through a defined resistance or support level. New ‘buy’ positions are entered into when the price breaks through a resistance level, while new ‘sell’ positions are entered into when the price breaks through a support level. These strategies are based on the view that once the price breaks through a support or resistance level, a new trend is likely to begin.
+
+Broker
+
+An individual or firm acting as an intermediary to bring together buyers and sellers, typically usually for a small commission or fee.
+
+Bull market
+
+A market distinguished by rising prices. Bullish investors have a positive opinion about a market, believing that prices will continue to rise.
+
+Bullion
+
+Precious metals such as gold, silver, platinum or palladium in the form of bars or ingots.
+
+Bundesbank
+
+Central bank of Germany.
+
+Buy limit order
+
+A conditional trading order that indicates a security may be purchased only at the designated price or lower. Also see Take-profit order.
+
+Buy position
+
+A position in the market that would profit from a rising market price, or make a loss should prices fall.
+
+Buy stop- entry order
+
+When you buy a security that is entered at a price above the current offer price. It is triggered when the market price touches or goes through the specified stop price.
+
+C
+Cable
+
+A term referring to the sterling/US dollar exchange rate: the rate was originally transmitted between the London and New York exchanges via the transatlantic telegraph cable beginning in the mid-1800s, hence the name.
+
+CAC 40
+
+A market capitalisation weighted index of the largest 40 companies listed on the Paris stock exchange. The CAC index is published by the Societe des Bourse Francaises.
+
+Candlestick chart
+
+As with a bar chart, this graph shows the high, low, opening and closing prices, and the shape of the candle reflects the relationship between these prices. The candles are either green or red, depending on whether the closing price is higher than the opening price (green) or below it (red). The main body, or ‘wax’, represents the range between the opening and closing price and the ‘wicks’ show the highs and lows. It shows a visual representation of the prevailing trend and current market sentiment.
+
+Capital
+
+The wealth, either monetary or in assets, owned by an individual or company.
+
+Carry cost
+
+The cost incurred as a result of holding a position (eg the carry cost incorporated into the price of a commodity future consists of insurance costs, storage costs, interest charges and other related costs).
+
+Carry trade
+
+A strategy in which a trader sells a certain currency with a low interest rate and uses the funds to purchase a different currency yielding a higher interest rate, attempting to capture the difference between the rates. Common low yielding currencies include the USD and JYP and common high yielding currencies include the AUD and NZD.
+
+Cash market
+
+The actual, underlying market on which derivatives contracts are based.
+
+Cash price
+
+The price of an asset for immediate delivery. In other words, the actual price of an instrument right now. This term is often used for stock indices, whereas the synonymous term of spot is more often applied to forex and commodity prices. Also see Spot rate.
+
+Central bank
+
+A government or quasi-governmental organisation that manages a country's monetary policy. For example, the UK’s central bank is the Bank of England, and the US central bank is the Federal Reserve.
+
+Channel
+
+An upward or downward trend on a chart where the boundaries are marked by two straight lines. A break above or below the channel lines signals a potential change in trend.
+
+Charting
+
+A range of techniques that use past price charts, along with other indicators, to anticipate future price movements.
+
+Close out
+
+Selling a buy position or buying back a sell position, which closes the position, so that you no longer have any exposure to changes in the market price.
+
+Closed position
+
+An equal and opposite transaction (for instance buying 1000 BT shares then selling 1000 BT shares) which results in the position automatically being closed.
+
+Closing price
+
+The closing price is the last price for a tradable instrument at the time the market closes.
+
+Commission
+
+A fee charged by a broker or agent for carrying out transactions/orders.
+
+Commodity
+
+A physical good, such as food, metal or fuel, that is interchangeable with other commodities of the same type. The quality of a commodity may differ slightly, but it is basically uniform across all producers, as any commodities that are traded on an exchange must meet specific minimum standards. A commodity is any basic good that investors can ‘buy’ or ‘sell’. Some popular commodities include: crude oil, coffee, gold, natural gas, silver, corn, sugar, cotton and wheat.
+
+Consumer Price Index (CPI)
+
+An index that measures changes in the price of goods and services purchased by consumers. The figure measures the average change over time in the price of a sample of various common goods and services purchased by typical urban households.
+
+Contango
+
+A situation where the futures price of a product is above the expected future spot price. Also see Backwardation.
+
+Contract (unit or lot)
+
+The standard trading unit on certain exchanges. For stock index, forex and commodity positions, it is the amount of base currency profit or loss per point movement in the market.
+
+Contract for difference (CFD)
+
+Contracts for difference (CFDs) are derivative products which enable you to trade on the price movement of underlying financial assets (such as indices, shares and commodities). A CFD is an agreement to exchange the difference in the value of an asset from the time the contract is opened until the time at which it is closed. With a CFD, you never actually own the asset or instrument you have chosen to trade, but can still benefit from, if the market moves in your favour.
+
+Controlled risk
+
+A position which has a strictly limited maximum loss by virtue of a guaranteed stop. Also see Limited risk.
+
+Core inflation
+
+A measure of inflation that excludes items that are subject to volatile price movements. Vegetable prices are an example of items where prices fluctuate widely based on seasonal conditions. These products are excluded from the calculation as they can give a false measure of inflation because prices can diverge from the overall trend.
+
+Corporate Action
+
+Any event initiated by a corporation which impacts its shareholders. For some events, shareholders may or must respond to the corporate action or select from a list of possible actions. Examples of corporate actions include dividend payments, mergers, rights issues and stock splits. Also see Dividend and Rights issue.
+
+Cross currency
+
+A pair of currencies traded in forex that do not include the US dollar, for example EUR/JPY.
+
+Cross rate
+
+An exchange rate between two currencies, both of which are not the official currency of the country in which it is quoted. Also refers to currency quotes that don’t involve the US dollar.
+
+Crossed price
+
+A situation where the bid price exceeds the offer price. This is usually indicative of an issue on the venue or of the market being in an auction period.
+
+Currency pair
+
+Refers to the price quotation of currencies traded in the foreign exchange market. To determine the value of a currency, it must be compared to the currency of another country (example GBP/USD). In currency pairs, the price amount shows how much of the second currency is required to buy one unit of the first currency.
+
+D
+Daily charts
+
+Charts that encapsulate the daily price movement of an instrument, for example a currency pair, index or share.
+
+Data releases
+
+Global economic statistics that are normally released at regular intervals, often monthly. The data can have a varying impact on the financial market, depending on factors such as when it‘s released and the level of economic insight it provides.
+
+DAX 40
+
+A market capitalisation weighted index of the top 40 companies listed on the Frankfurt Stock Exchange in Germany. This is referred to as the ’Germany 40’ on our website and trading platform.
+
+Day order
+
+An order to buy or sell an instrument that will expire automatically at the end of the day if it’s not executed on the day the order has been placed.
+
+Day trading
+
+The process of entering and closing out trades within the same day or trading session.
+
+Dealing spread
+
+The difference between the buying and selling price of a contract.
+
+Deposit
+
+The funds required to initiate and maintain an open CFD trading position. Since CFDs are traded on margin, the deposit is only a fraction of the full value of the trade and is not the total amount that can be lost on a trade.
+
+Depreciation
+
+A fall in the value of an asset.
+
+Diversification
+
+An investment strategy that aims to manage risk through variety within an investor's trading portfolio. Different components are chosen from a range of different industry sectors, so it’s unlikely that all of the investments will fluctuate in the same direction. The idea is that the portfolio as a whole will display more consistent, stable results than any of the individual components in the portfolio.
+
+Dividend
+
+That part of a company’s profit after tax that is distributed to its shareholders. Dividends are usually distributed in cash, but can also take the form of stocks. Also known as payouts.
+
+Dividends
+
+A dividend is a distribution of a portion of a company's earnings, decided by the board of directors, to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property.
+
+Dove, dovish
+
+The opposite of hawk, a dove refers to an economic policy advisor supporting monetary policies with lower interest rates as a means of encouraging economic growth.
+
+Dow Jones Industrial Average (Dow)
+
+The Dow is the second oldest stock market index in the US and the most widely used indicator of the overall condition of the US stock market. It measures the performance of a selection of 30 blue-chip, publicly owned companies in the US.
+
+Downtrend
+
+A price trend characterised by a series of lower highs and lower lows.
+
+E
+Economic driver
+
+Change in the economy that leads to changes in the market price of investments, such as shares, commodities or property.
+
+Economic indicator
+
+A government-issued statistic that indicates current economic growth and stability. Common indicators include employment rates, gross domestic product (GDP), inflation and retail sales.
+
+Electronic Currency Network (ECN)
+
+A virtual exchange for FX transactions.
+
+Elliott wave theory
+
+Developed by RN Elliott, the Elliott Wave theory is a method of technical analysis based on the assumption of predictability, by identifying a certain flow and structure to the price movement of financial instruments.
+
+Equity
+
+A stock or share representing an ownership interest.
+
+Euro
+
+The monetary unit of the eurozone, currently used by 19 European Union countries (Germany, France, Italy, Spain, Portugal, Belgium, The Netherlands, Luxembourg, Austria, Ireland, Finland, Greece, Cyprus, Malta, Slovakia, Slovenia, Estonia, Latvia and Lithuania).
+
+Ex-dividend date
+
+The first trading day on which the buyer of a share is no longer entitled to payment of the current dividend.
+
+Exchange
+
+A marketplace in which securities, commodities, derivatives and other financial instruments are traded. The core function of an exchange - such as a stock exchange - is to ensure fair and orderly trading, as well as efficient dissemination of price information for any securities trading on that exchange. Exchanges give companies, governments and other groups a platform to sell securities to the investing public. An exchange may be a physical location where traders meet to conduct business or an electronic platform.
+
+Execute and eliminate order
+
+A limit order to execute at the current market price or worse. If the order is not filled in its entirety down to the specified order level then any remaining balance will be cancelled.
+
+Execution-only stockbroker
+
+Stockbroker who offers clients an inexpensive trading facility without advice, research or recommendations pertaining to investment style or policy.
+
+Expiration date
+
+The last date that a particular contract can be traded.
+
+Expiration/ Expiry
+
+Some CFD markets have a fixed duration. For example futures contracts will expire at a pre-specified date and time in the future. At this point a futures contract is said to have expired and is awaiting settlement. Settlement is when the expired contract is closed at a level normally relating to the market at the time of expiry.
+
+Exposure
+
+The level of an investment which is at risk. The higher the exposure, the bigger the potential loss or gain.
+
+F
+Fair value
+
+The premium (or discount) of a futures contract against its underlying spot/cash instrument that normally consists of an interest and dividend component. The fair value represents the rational pricing of a futures contract such that no arbitrage opportunity exists between the futures and cash.
+
+Fibonacci
+
+Technical analysis ratios used in trading to identify future price movements – named after mathematician Leonardo Fibonacci. The most popular Fibonacci tools are retracements and extensions.
+
+Fill
+
+The execution of an order.
+
+Fill or kill order
+
+A limit order that will only be executed if it can be filled entirely to your specified order level. Otherwise it will be cancelled.
+
+Financial Conduct Authority (FCA)
+
+The authority responsible for supervising financial services firms in the UK. One of the FCA’s roles is to regulate the conduct of brokers and dealers in securities, options, shares, spread bets and CFDs so clients get a fair deal.
+
+Financing costs
+
+CFD share positions carried overnight will incur financing costs for the full consideration of the position. If you open a position with a 5% margin, overnight finance will be based on 100% of the balance. Clients who hold a long position will pay interest; clients who are short may receive interest.
+
+Fiscal policy
+
+Fiscal policy refers to governments’ spending policies, which have a significant impact on the overall economy. The policy affects government revenue and spending. When a government runs a deficit (spends more than it earns), it is putting more into the economy than it is taking out, adding to gross domestic product (GDP).
+
+Flexible spread
+
+The difference between the bid and offer price that a broker can adjust according to market conditions. Also known as dynamic spread, floating spread or variable spread.
+
+Floating profit/ loss
+
+Current profit/loss on open positions calculated at current prices.
+
+Foreign exchange
+
+The forex market is made up of banks, commercial companies, central banks, investment management firms, hedge funds, retail forex brokers and investors. It’s a financial market for trading international currencies. Investors speculate on the relative strength of one currency against another by buying the currency of one country and selling it against another.
+
+Forward
+
+A forward trade (or contract) is the price of an asset for delivery at a defined future date, which is also the date of expiry. Most forward trades can be closed prior to the expiry date, to limit any loss or take a profit, for example. FX forwards are a common example of this type of contract.
+
+Free margin
+
+Funds on the trading account which may be used to open a position. It’s calculated as account value less necessary margin.
+
+FTSE 100
+
+A market capitalisation weighted index of the top 100 companies listed on the London Stock Exchange. This is often used as an indicator to assess the broader UK market.
+
+Fundamental analysis
+
+This involves analysing and valuing financial assets based on factors such as news, financial statements and earnings forecasts, company strategy and risk assessments, demand and supply forecasts, projections of future economic growth, industry developments and government policy. In fundamental analysis, an investor uses real data to evaluate a stock’s value rather than using charts and technical analysis to make trading decisions.
+
+Futures
+
+A future rate is notionally an agreement to conduct a transaction at some specified time in the future, with the price agreed now. A futures CFD will automatically expire at a specified time in the future, whereas a spot or cash CFD has no such expiry time. Often the price of a future contract will differ from the cash price. Also see Fair value, Expiration/expiry.
+
+G
+Gapping
+
+The phenomenon of a market trading at a price away from the previous traded price without trades occurring at intervening prices; it more usually, but not necessarily, relates to when a market resumes trading after a period of closure. Also see Slippage.
+
+Gearing
+
+Gearing is a measure of leverage used, usually expressed as a percentage. A highly leveraged trade would require a small initial outlay in comparison to the notional value of the trade, and can be seen as high risk. Small price movements create amplified gains or losses, and therefore losses can exceed deposits made. Also see Leverage.
+
+Good-for-day (day order)
+
+An order type that will expire if not filled by the end of the day. See also Order to open, Good-till-cancelled, Fill.
+
+Good-till-cancelled (GTC)
+
+Unlike good-for-day orders, GTC orders remain active on the account waiting for a fill unless cancelled before being filled. See also Order to open, Good-for-day, Fill.
+
+Greenback
+
+A slang term for the US dollar.
+
+Gross domestic product (GDP)
+
+GDP is the value of goods and services produced in a country including exports, minus imports made. It’s a measurement of a country’s overall economic activity, and can also be a gauge for its standard of living.
+
+Guaranteed stop-loss order (GSLO)
+
+A stop-loss order is an order to buy or sell when the market reaches the 'stop' price, which allows you to limit your losses. Unlike a standard stop-loss order, a guaranteed stop-loss order (GSLO) is unaffected by slippage or gapping and guarantees the price your trade will be closed out at. There is a premium to pay when placing the GSLO with us; however we will refund this in full if the trade is closed out without the GSLO being executed.
+
+H
+Hawk, hawkish
+
+An economic policy advisor who favours relatively higher interest rates to keep inflation under control or curb rapid economic growth. See also Dove.
+
+Hedge
+
+A way of reducing the risk of losses that may occur if interest rates, share prices or foreign exchange rates move in the wrong direction. This usually involves the use of CFD or futures contracts.
+
+Holding costs
+
+Positions that are held open past 17:00 New York time will incur holding costs. These holding costs will be calculated based on the notional potentially size of the position. Also see Financing costs.
+
+I
+Illiquid market
+
+A market with relatively less aggregate volume in the order book. In an illiquid market, a small amount of business often moves prices by a disproportionate amount, and bid and offer prices can be far apart.
+
+Illiquidity
+
+The difficulty of changing your assets to cash because of a lack of demand for the asset you're trying to sell. As a market maker, we provide liquidity by constantly quoting a bid and offer spread. Also see Liquidity.
+
+Index
+
+An index, such as the FTSE 100 or S&P 500, gauges the prosperity or value of a section of the stock market. It is calculated from the prices of selected stocks, usually using a weighted average. It is not possible to invest directly in an index; instead investors trade in funds or other products that track the movement of an index.
+
+Industrial production
+
+A monthly economic indicator that measures changes in output for the UK’s industrial sector, including manufacturing, mining and utilities.
+
+Inflation
+
+An increase in the general price of goods and services.
+
+Inflation rate
+
+A measure of inflation that occurs in a given period (a year or calendar quarter for example). The inflation rate shows us how quickly the general price of goods and services is rising.
+
+Initial Public Offering (IPO)
+
+The process by which a company is floated on the stock market for the first time. Offering shares to the investment public is a way of raising capital for further expansion. Also known as New issue.
+
+Instant execution
+
+An order that is executed at the price displayed on the screen. If the price isn’t available a requote can be offered as a new two-way price, at which you can resubmit the order or choose to cancel it.
+
+Interbank rates
+
+FX rates quoted to each other by international banks.
+
+Interest
+
+Cash adjustments made to reflect the economic effect of owing or receiving the notional amount of equity controlled by a CFD position.
+
+Intraday trading
+
+Trading where positions are opened and then closed out within the same trading day.
+
+J
+Japanese candlestick charts
+
+Japanese candlestick charts are similar to bar charts in that each ‘candle’ shows the opening price, closing price, high price and low price for the period. The candles are either green or red, depending on whether the closing price is higher than the opening price (green) or below it (red). The main body, or ‘wax’, represents the range between the opening and closing price and the ‘wicks’ show the highs and lows.
+
+K
+Kiwi
+
+A slang term often used to reference the New Zealand dollar (or NZD), which is New Zealand's base unit of currency.
+
+L
+Last dealing day
+
+The last day on which you may trade in a particular market. This may or may not coincide with the settlement date for that market.
+
+Leverage
+
+Leverage allows traders to gain a large exposure with a relatively small outlay. This has the effect of amplifying profit or loss. A leverage of 1:100 means that in order to open and maintain a position the necessary margin is one hundred times less than the transaction size.
+
+Libor (London InterBank Offered Rate)
+
+The interest rate charged between banks in London for short-term loans and a key benchmark that influences many other interest rate charges/products. Individual currency denominations have an associated Libor. It is produced for ten currencies with 15 maturities quoted for each, ranging from overnight to 12 months, producing 150 rates each business day.
+
+Limit order
+
+A limit order is an order to buy or sell a product at a specific price. A limit order to buy at a target price with CMC Markets is executed at the target price or lower, when the buy price is equal to or lower than the target price. A limit order to sell at a target price with CMC Markets is executed at the target price or higher, when the sell price is equal to or higher than the target price.
+
+Limited risk
+
+A trade which has a strictly limited maximum loss. Also see Controlled risk.
+
+Line charts
+
+Line charts are created by connecting a series of data points, usually past price closes, with a line. They are the most basic type of charts used in financial markets.
+
+Liquid market
+
+A liquid market has sufficient volume of two-way business for a large transaction to occur with little or no impact on price. Such a market will normally exhibit tight bid-offer spreads.
+
+Liquidity
+
+The level of continual buy and sell activity making up market demand and indicating the ease with which investors can undertake transactions.
+
+Liquidity providers
+
+A liquidity provider is an individual or institution which acts as a market maker in a given asset class. In the world of Forex the majority of global liquidity is provided by a number of big name investment banks (referred to as Tier 1 liquidity providers).
+
+Log file
+
+An ongoing journal of your trading activity.
+
+Long position
+
+A position taken in anticipation of a rising market. To go long means to open a ‘buy’ position.
+
+Long-term trading
+
+In the context of CFDs, longer-term trading refers to strategies where the average duration of open positions would be between a week and several months.
+
+Loonie
+
+A slang term for the Canadian dollar.
+
+Lot size
+
+It is the standardised quantity of a financial instrument, such as base currency, underlying asset or shares, per contract.The last day on which you may trade in a particular market. This may or may not coincide with the settlement date for that market.
+
+Leverage
+
+Leverage allows traders to gain a large exposure with a relatively small outlay. This has the effect of amplifying profit or loss. A leverage of 1:100 means that in order to open and maintain a position the necessary margin is one hundred times less than the transaction size.
+
+Libor (London InterBank Offered Rate)
+
+The interest rate charged between banks in London for short-term loans and a key benchmark that influences many other interest rate charges/products. Individual currency denominations have an associated Libor. It is produced for ten currencies with 15 maturities quoted for each, ranging from overnight to 12 months, producing 150 rates each business day.
+
+Limit order
+
+A limit order is an order to buy or sell a product at a specific price. A limit order to buy at a target price with CMC Markets is executed at the target price or lower, when the buy price is equal to or lower than the target price. A limit order to sell at a target price with CMC Markets is executed at the target price or higher, when the sell price is equal to or higher than the target price.
+
+Limited risk
+
+A trade which has a strictly limited maximum loss. Also see Controlled risk.
+
+Line charts
+
+Line charts are created by connecting a series of data points, usually past price closes, with a line. They are the most basic type of charts used in financial markets.
+
+Liquid market
+
+A liquid market has sufficient volume of two-way business for a large transaction to occur with little or no impact on price. Such a market will normally exhibit tight bid-offer spreads.
+
+Liquidity
+
+The level of continual buy and sell activity making up market demand and indicating the ease with which investors can undertake transactions.
+
+Liquidity providers
+
+A liquidity provider is an individual or institution which acts as a market maker in a given asset class. In the world of Forex the majority of global liquidity is provided by a number of big name investment banks (referred to as Tier 1 liquidity providers).
+
+Log file
+
+An ongoing journal of your trading activity.
+
+Long position
+
+A position taken in anticipation of a rising market. To go long means to open a ‘buy’ position.
+
+Long-term trading
+
+In the context of CFDs, longer-term trading refers to strategies where the average duration of open positions would be between a week and several months.
+
+Loonie
+
+A slang term for the Canadian dollar.
+
+Lot size
+
+It is the standardised quantity of a financial instrument, such as base currency, underlying asset or shares, per contract.
+
+M
+Major currency pairs
+
+The most heavily traded currency pairs in the FX market, including: EUR/USD, USD/JPY, GBP/USD and USD/CHF.
+
+Margin
+
+CFD trading requires investors to deposit a small percentage of the overall cost that would be required if they were to purchase outright the equivalent product in the physical market. Even though the investor’s outlay is small in comparison to the value of the whole position, the investor will still be exposed to the same potential profit and loss. This means that your potential return on investment is magnified, as are your potential losses. Sometimes called 'variation margin'.
+
+Margin call
+
+A broker's request to an investor using margin to deposit additional funds. Margin calls occur when an account's funds fall to a specific value calculated by the broker, or if one or more of the products bought, effectively with borrowed money, decreased in value past a certain point.
+
+Mark-to-market
+
+The daily adjustment of an account to reflect accrued profits and losses often required to calculate variations in margins.
+
+Market capitalisation (MCAP)
+
+Market capitalisation refers to the value of a company’s shares. The figure is reached by multiplying the number of shares that have been issued by the current share price. Investors find the MCAP figure useful for determining the size of a company.
+
+Market execution
+
+An order that is executed at the best price available in the market, with no requotes.
+
+Market order
+
+An order that you use to specify the direction and size of a trade, but not the price. This ensures your order will be filled as quickly as possible.
+
+Market-making
+
+The process of quoting a bid and offer based on speculation, expectation, supply and demand.
+
+Medium-term trading
+
+In the context of CFDs, this refers to strategies where the trader is prepared to hold positions open for longer than one day but where the average duration of open positions would be no more than a few weeks.
+
+Mid-price
+
+The bid plus the offer, divided by two.
+
+Monetary policy
+
+The action of central banks to set interest rates and control the amount of money in an economy, with the aim of keeping inflation and unemployment at acceptable levels.
+
+Moving average
+
+The graphical representation of a smoothed-out price action over a set period of time. Moving averages can help identify a trend, points of entry and potential target levels for stops.
+
+Moving Average Convergence Divergence (MACD)
+
+A chart indicator used in technical analysis to indicate a potential bullish or bearish trend reversal.
+
+N
+Nasdaq
+
+The Nasdaq is the second largest stock exchange in the US and traditionally lists many technology companies, such as Microsoft. The movements of the Nasdaq can have a significant effect on UK markets, particularly the techMARK index of technology, media and telephony companies.
+
+New issue
+
+A company that is floated on the stock market for the first time. Offering shares to the investing public is a way of raising capital for further expansion. Also known as Initial Public Offering (IPO).
+
+New York Stock Exchange (NYSE)
+
+The largest and oldest stock exchange in the US.
+
+Nikkei 225
+
+A price-weighted index of the top 225 shares listed on the Tokyo stock exchange.
+
+Non-dealing desk (NDD)
+
+An execution model that allows you to trade directly with numerous market liquidity providers in order to get the most competitive bid and ask prices.
+
+Non-farm payrolls
+
+A notable economic indicator normally released on the first Friday of every month by the US Department of Labor. It presents the number of people on the payrolls of all businesses, with the exception of agricultural, local government, private household and non-for-profit. The monthly figure can change significantly, and often leads to a high level of volatility in FX pairs such as EUR/USD, around the time of the release. Generally, a high reading is seen as positive (or bullish) for the US dollar, while a low reading is seen as negative (or bearish).
+
+O
+OCO (one cancels the other)
+
+Lets you place a sell limit and sell stop order on the same stock at the same time. When either order is executed the other will automatically be cancelled. Also applies to a buy limit and buy stop order.
+
+Offer
+
+A current market price is made up of a level at which you can sell and a level at which you can buy. The level at which you can buy is always the higher of the two prices and is called the offer. Also known as bid/bid price, as on B-Bid, you also mentioned it was known as offer/offer price.
+
+Offer price
+
+The price at which the seller is willing to sell at. Also known as bid/bid price, as on B-Bid, you also mentioned it was known as offer/offer price.
+
+Online trading
+
+The act of buying or selling financial instruments via the internet using a broker like CMC Markets’ online trading platform.
+
+Open position
+
+A long or short position which has not been closed out by an equal and opposite position.
+
+Option
+
+The right, but not the obligation, to buy (‘call option’) or sell (‘put option’) a specific amount of a given stock, commodity, currency, or index at a specified price (the ‘strike price’) during a specified period of time. For the holder, the potential loss is limited to the price paid to acquire the option. When an option is not exercised, it expires.
+
+Order / order to open
+
+An instruction by a customer to a broker/trader to buy or sell should a specified price be reached. The order remains valid until executed or cancelled by the customer.
+
+Order book
+
+When bid and offer prices match, new incoming orders are automatically logged against orders on the book. FTSE 100 stocks have been traded on an electronic order book since 20 October 1997
+
+Oscillator
+
+A leading indicator in chart analysis which shows a potential trend reversal before it occurs.
+
+Out-of-hours
+
+Out-of-hours – or extended hours – trading usually refers to trading on an index outside of its main opening hours. At CMC Markets, you can trade on the UK 100, Germany 30, France 40 and Euro 50, 24-hours-a-day from Sunday evening to Friday evening.
+
+Over-the-counter market (OTC)
+
+Refers to trading that is carried out directly between two parties, without any supervision of an exchange.
+
+P
+Pip
+
+Normally used in reference to forex rates, a 'percentage in point' is generally, though not always, the fourth decimal place, ie 0.0001. Traditionally a pip was the smallest point by which a forex rate could move, but this is no longer the case.
+
+Pivot points
+
+Used in technical analysis, pivot points use the previous period’s high, low and close to calculate the current period’s support and resistance levels.
+
+Portfolio
+
+A collection of investments owned by an individual or company.
+
+Position
+
+An open trade that you have in the market.
+
+Position margin
+
+The amount of equity that a CFD trader is required to pay in order to open a new position.
+
+Position sizing
+
+The size of a position within a particular portfolio. It’s also associated with a risk management technique where an investor calculates the size of each new position so that the maximum likely loss on the position does not exceed a certain amount or a certain percentage of their capital.
+
+Producer Price Index (PPI)
+
+A statistic that measures changes in the price of finished goods and services sold by producers.
+
+Profit and Loss (P&L)
+
+Abbreviation of profit and loss; an account compiled at the end of an accounting period to show gross and net profit or loss. In CFD trading, it shows money gained or loss incurred on a position.
+
+Purchasing Managers Index (PMI)
+
+An indicator of economic activity created through surveys completed by mangers in a number of manufacturing companies. It provides a picture of economic conditions within the manufacturing sector, and is often used by investors to predict future GDP numbers for a country's economy.
+
+Q
+Quantitative easing
+
+A measure adopted by central banks to stimulate an economy when traditional monetary policy measures (like cutting interest rates) have failed. The central bank electronically creates funds in its own bank account to purchase previously-issued government bonds, plus private sector and distressed assets (so companies can raise capital). This serves to create more tradable and liquid markets to help stimulate the economy.
+
+Quarterly CFDs
+
+A type of future with periodic expiries spaced three months apart. Prices are normally quoted for the next two or three quarter months. Also see Rollover.
+
+Quote
+
+The two-way market price for a given instrument; because it’s two-way, you can buy or sell, according to whether you think prices will rise or fall.
+
+Quote currency
+
+The second currency in a pair (for example USD is the counter currency in GBP/USD). Also see Base currency.
+
+R
+Range
+
+Where the price moves within a defined boundary.
+
+Realised profit/loss
+
+The amount of money you have made or lost on a position once it has been closed. Realised profit or loss will add to or subtract from your account cash balance.
+
+Relative strength index (RSI)
+
+A chart indicator used in technical analysis. It identifies when trends are coming to the end of their current direction, as well as overbought and oversold market conditions.
+
+Requote
+
+A requote occurs when you request to execute an order at a specific price that is no longer available and you’re offered a different quote. This can happen during fast-moving markets.
+
+Resistance level
+
+A term used in technical analysis indicating a price level at which analysis suggests a predominance of selling – and hence a greater likelihood that the price will fail to break through the level.
+
+Retail sales
+
+This figure represents the total of durable and non-durable goods sales by retailers to consumers. Services are largely excluded from this statistic.
+
+Rights issue
+
+An additional issue of shares by a company to existing shareholders at an advantageous, discounted price, usually in order to raise new funds for further development or to finance a new acquisition. A two for five rights issue at 145 cents means that the existing shareholder has the right to acquire a further two shares for every five currently held at a new cost of 145 cents per share acquired.
+
+Rollover
+
+Closing an expiring futures position and reopening the position in the next tradeable future. In forex, the value of the process is measured by the interest rate differential between the two currencies. There’s usually a small cost for rolling over positions.
+
+Running profit/loss
+
+Shows how your open positions are performing: the unrealised money that you would gain or lose on your open positions if they were closed at prevailing market prices.
+
+S
+S&P 500
+
+A market capitalisation weighted index of the top 500 companies listed in the New York stock exchange (NYSE) or the NASDAQ. Often used as a gauge of sentiment for the US market.
+
+Scalping
+
+A trading strategy that involves placing short-term trades, sometimes less than a minute long, usually to try and capture small price movements.
+
+Sector
+
+A distinct subset of a market whose components share similar characteristics. Stocks are often grouped into different sectors depending upon the company's business. For example the FTSE 100 has banking, oil & gas and pharmaceutical sectors.
+
+Sell limit / limit sell
+
+A conditional trading order that indicates an instrument may be sold only at the designated price or higher.
+
+Sell stop
+
+An order to open a sell position at a price lower than the price at the moment of placing the order. It is subject to price depth ladder and can be slipped to the current market price.
+
+Selling short
+
+This is practice of selling shares that you do not own in the hope that the share price falls before you have to settle the contract. If the price does fall you can then buy the shares at the lower price and pocket the difference. Also see Shorting.
+
+Settlement
+
+The process of a position closing against a specified market level once the position has gone beyond its last dealing time. Also see Expiry.
+
+Shorting
+
+A form of trading where the initial transaction is to sell, for example a CFD position taken in anticipation of a falling market. The position is closed with a buy trade. The trader will profit if the price falls and lose if it rises. When trading FX it refers to selling the base currency against the quote currency.
+
+Slippage
+
+The difference between the requested level of an order and the actual price at which it was executed. Slippage can occur during periods of higher volatility when market prices move rapidly or gap. Also see Fill and Gapping.
+
+Spot price
+
+The price quoted for immediate settlement or delivery of a currency, index, commodity or share (that is payment for and delivery of a product). It’s the current price at which a commodity or currency can be bought or sold at that specific time.
+
+Spot rate
+
+An exchange rate for immediate settlement.
+
+Spread
+
+The difference between the bid and the ask price of a security or asset.
+
+Spread charts
+
+Spread charts show the buy and sell prices plotted into a dual line chart format. A blue line represents the buy price and an orange line represents the sell price; the shaded area is the difference between the two, or ‘the spread’.
+
+Stochastic
+
+A chart indicator used in technical analysis to determine potential trend reversals, indicating an overbought or oversold market condition.
+
+Stock exchange
+
+A market on which securities are traded.
+
+Stock index
+
+Stock indices are a compilation of a number of stocks into one total price, allowing investors to easily follow the performance of certain groups of stocks.
+
+Stockbroker
+
+An exchange member firm which provides advice and dealing services to the public as well as trading on its own account.
+
+Stop entry order
+
+Stop-entry orders allow you to enter a transaction at a selected target price and within a set time period. A stop-entry order to buy is an order at a price above the prevailing market price. A stop-entry order to sell is an order at a price below the prevailing market price. Stop-entry orders are subject to potential slippage.
+
+Stop-loss
+
+An order placed to automatically close your position when the price reaches your specified stop-loss trigger price. A stop-loss order is designed to limit a loss on a position. This is not always guaranteed, however, as market conditions may cause the trade to be executed at a slightly different price, due to market gapping or slippage. Also known as a stop order.
+
+Stop order
+
+An order to close a position when prices pass a certain point. A stop order can be attached to an existing position (known as a stop-loss) or used to initiate a new position (see Order to open).
+
+Strike price
+
+The price at which a contract can be exercised or settled against in reference to options trading.
+
+Support
+
+A price level that the market doesn’t fall below for some time. When prices fall to a support level the weight of buying outweighs selling and prices tend to be pushed up again. A number of different trend troughs often occur at a support level.
+
+Support level
+
+A technique used in technical analysis to indicate a price floor at which you would expect the price to 'bounce' off. A price point where it is anticipated buyers will enter the market and 'support' the price. The opposite of this is resistance.
+
+Swissie
+
+A slang term for the Swiss franc.
+
+T
+Take-profit order
+
+An order to close an open position at a more profitable price than the prevailing market price.
+
+techMARK
+
+This market groups together technology companies from across the market. It has its own indices: the FTSE techMARK 100 and the FTSE techMARK All-share.
+
+Technical analysis
+
+A technique used to try and predict future movements of a security, commodity or currency, based solely on past price movements and volume levels. It examines charts and historical performance to forecast prices by analysing market data, such as historical price trends, averages and volumes.
+
+Tick
+
+A single price movement which can be either positive or negative.
+
+Tom-next charges
+
+In foreign exchange, the cost of holding a position overnight. Short for tomorrow-next, it normally incorporates the interest considerations in simultaneously holding and owing the notional and base currencies as well as being influenced by the relative availability of the associated currencies.
+
+Trade balance
+
+This statistic reveals the difference between a country’s exports and imports of goods and services, such as cars, electronics, textiles, banking and insurance.
+
+Trade size
+
+The size of the underlying position that you are trading. It governs how much you make or lose on a trade for every point of movement in the price of the market.
+
+Trailing stop
+
+Trailing stops are a special type of stop-loss order that trail behind the market price when the market moves in your favour.
+
+Transaction costs
+
+The costs you incur when trading financial products. These costs include commission (on shares), financing and spreads.
+
+Transaction date
+
+The date a trade occurs.
+
+Treasury
+
+A bond issued by a government. Bonds issued by the UK government are called gilt-edged stocks, commonly referred to as gilts.
+
+Trend
+
+The general direction in which prices tend to move.
+
+Trend lines
+
+A straight line drawn across a chart that indicates the overall trend. In an upward trend, the line is drawn below, and acts as a support line; the opposite holds true for a downward trend. Once the asset breaks the trend line, the trend is considered to be invalid.
+
+Two-way price
+
+When both a bid (sell) and offer (buy) rate is quoted for a transaction.
+
+U
+Underlying
+
+A term used in derivatives trading, such as with CFDs. A derivative is a financial instrument whose price is based (derived) from a different asset. The underlying is the financial instrument (eg, stock, futures, commodity, currency, index) on which a derivative's price is based.
+
+Unemployment claims
+
+This statistic represents the number of individuals who filed for unemployment insurance for the first time during the past week. This is the US’s earliest jobs-related economic data release.
+
+Uptick
+
+A price quoted that is higher than the previous quote.
+
+V
+Volatility
+
+An explanation of how quickly the price of a market or instrument rises or falls. A highly volatile market can be risky for short-term investors as they risk buying at a peak or selling in a trough at a loss.
+
+W
+Wall Street
+
+An alternative, well-known term for the New York Stock Exchange (NYSE), the largest stock exchange in the US.
+
+Working an order
+
+The process of having an order working that has not yet been executed. Also known as a pending order.
+
+X
+XD
+
+XD is a symbol that is used to signify that a security or stock has gone ex-dividend.
+
+Y
+Yard
+
+A slang trading term for a billion units.
+
+Yield
+
+The income return earned on an investment. There are a number of different types of yield, and in some cases different methods of calculating each type. Yield refers to the dividends received or interest on a security and is usually an annual figure.
+
+Yuan
+
+Base unit of currency in China.
+
+Z
+Zloty
+
+Polish unit of currency.

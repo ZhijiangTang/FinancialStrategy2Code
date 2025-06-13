@@ -1,4 +1,4 @@
-export OPENAI_API_KEY=""
+export OPENAI_API_KEY="sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
 
 GPT_VERSION="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
 
@@ -16,14 +16,14 @@ echo $PAPER_NAME
 
 echo "------- Preprocess -------"
 
-python ../codes/0_pdf_process.py \
+python3 ../codes/0_pdf_process.py \
     --input_json_path ${PDF_JSON_PATH} \
     --output_json_path ${PDF_JSON_CLEANED_PATH} \
 
 
 echo "------- PaperCoder -------"
 
-python ../codes/1_planning.py \
+python3 ../codes/1_planning.py \
     --paper_name $PAPER_NAME \
     --gpt_version ${GPT_VERSION} \
     --pdf_json_path ${PDF_JSON_CLEANED_PATH} \
@@ -31,19 +31,19 @@ python ../codes/1_planning.py \
 
 echo "------- Extract Config -------"
 
-python ../codes/1.1_extract_config.py \
+python3 ../codes/1.1_extract_config.py \
     --paper_name $PAPER_NAME \
     --output_dir ${OUTPUT_DIR}
 
 cp -rp ${OUTPUT_DIR}/planning_config.yaml ${OUTPUT_REPO_DIR}/config.yaml
 
-python ../codes/2_analyzing.py \
+python3 ../codes/2_analyzing.py \
     --paper_name $PAPER_NAME \
     --gpt_version ${GPT_VERSION} \
     --pdf_json_path ${PDF_JSON_CLEANED_PATH} \
     --output_dir ${OUTPUT_DIR}
 
-python ../codes/3_coding.py  \
+python3 ../codes/3_coding.py  \
     --paper_name $PAPER_NAME \
     --gpt_version ${GPT_VERSION} \
     --pdf_json_path ${PDF_JSON_CLEANED_PATH} \
