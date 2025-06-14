@@ -6,6 +6,7 @@ score/
 # Python 相关
 **/__pycache__/
 *.pyc
+
 *.py[cod]
 *$py.class
 *.so
