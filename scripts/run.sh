@@ -1,11 +1,11 @@
 export OPENAI_API_KEY="sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
 
-GPT_VERSION="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+GPT_VERSION="o3-mini"
 
 PAPER_NAME="Transformer"
 PDF_PATH="../examples/Transformer.pdf" # .pdf
 PDF_JSON_PATH="../examples/Transformer.json" # .json
-PDF_JSON_CLEANED_PATH="../examples/Transformer_cleaned.json" # _cleaned.json
+PDF_JSON_CLEANED_PATH="../examples/Momentum.json" # _cleaned.json
 OUTPUT_DIR="../outputs/Transformer"
 OUTPUT_REPO_DIR="../outputs/Transformer_repo"
 
@@ -29,7 +29,6 @@ python3 ../codes/1_planning.py \
     --pdf_json_path ${PDF_JSON_CLEANED_PATH} \
     --output_dir ${OUTPUT_DIR}
 
-echo "------- Extract Config -------"
 
 python3 ../codes/1.1_extract_config.py \
     --paper_name $PAPER_NAME \

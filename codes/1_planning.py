@@ -5,6 +5,7 @@ import argparse
 import os
 import sys
 from utils import print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
+from rag_handler import RAGHandler
 
 parser = argparse.ArgumentParser()
 
@@ -37,6 +38,16 @@ else:
     print(f"[ERROR] Invalid paper format. Please select either 'JSON' or 'LaTeX.")
     sys.exit(0)
 
+######################################## RAG ########################################
+# 初始化 RAG
+rag = RAGHandler()
+# 检索相关知识
+rag_context = rag.retrieve(paper_content, k=5)
+# Format context for the prompt
+context_str = "\n\n".join([f"Source: {ctx['source']}\nContent: {ctx['text']}" for ctx in rag_context])
+print(context_str)
+######################################## RAG ########################################
+
 plan_msg = [
         {'role': "system", "content": f"""You are an expert researcher and strategic planner with a deep understanding of experimental design and reproducibility in scientific research. 
 You will receive a research paper in {paper_format} format. 
@@ -51,6 +62,9 @@ Instructions:
         {"role": "user",
          "content" : f"""## Paper
 {paper_content}
+
+Use the following financial knowledge and best practices as additional context to ensure the accuracy and quality of your plan:
+{context_str}
 
 ## Task
 1. We want to reproduce the method described in the attached paper. 

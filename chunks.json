@@ -37,427 +37,427 @@
     },
     {
         "text": "A\nAccount balance/account value\n\nThe net amount held at any given time in an account, after factoring in all debits and credits.\n\nAIM (Alternative Investment Market)\n\nA sub-market of the London Stock Exchange (LSE), allowing smaller companies to raise capital with a more flexible regulatory system than is required for the main market of the LSE. CFDs in AIM-listed shares are not available.\n\nArbitrage\n\nThe process of buying an asset (such as shares) and then immediately selling it so as to profit from the di",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "immediately selling it so as to profit from the difference. Arbitrageurs can exploit tiny differences in the quoted price of an identical instrument across different markets using very large-sized trades.\n\nAsk\n\nThe lowest price at which a seller is willing to sell an investment or asset at a given moment. Also known as the offer price.\n\nB\nBackwardation\n\nA theory which says that as a futures contract nears expiry, it will trade at a higher price compared to when it was further from the expiry date. It is a c",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "hen it was further from the expiry date. It is a condition that occurs in commodities and futures markets where the price of a given good is higher today than the price in the future. Also see Contango.\n\nBar chart\n\nA style of chart used in technical analysis, where the top of the vertical line represents the highest price traded in a particular instrument, and the bottom part displays the lowest price. The closing price is shown on the right side of the bar, and the opening price is shown on the left side o",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " and the opening price is shown on the left side of the bar. A single bar normally represents one day of trading.\n\nBase currency\n\nThe first currency quoted in a currency pair (for example in the GBP/USD currency pair, GBP is the base currency while USD is the quote currency).\n\nBase rate\n\nThe lending rate determined by the central bank of a given country.\n\nBasis point\n\nTypically one hundredth of 1%, for example an interest rate cut of 50 basis points is equal to 0.5%.\n\nBear market\n\nA market distinguished by ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " to 0.5%.\n\nBear market\n\nA market distinguished by falling prices and negative sentiment.\n\nBid\n\nThe highest price a buyer is willing to pay for a product is referred to as the ‘bid’. Also see Ask and Offer.\n\nBid price\n\nThe price at which the buyer is willing to purchase at.\n\nBid-offer spread\n\nThe difference between the buying price (offer/ask) and selling price (bid) of a product.\n\nBlue chip\n\nBlue-chip companies are usually well-established, financially sound and better able to weather downturns. As a result",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " and better able to weather downturns. As a result, blue-chip stocks are regarded as less volatile. Companies listed in a country’s top tier stock index, such as the UK’s FTSE 100, are considered blue-chips.\n\nBollinger Bands®\n\nA chart indicator used in technical analysis to measure market volatility, consisting of a single moving average and two standard deviation bands.\n\nBreakout trading\n\nTrading strategies that aim entering CFD trades once the price breaks through a defined resistance or support level. Ne",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " through a defined resistance or support level. New ‘buy’ positions are entered into when the price breaks through a resistance level, while new ‘sell’ positions are entered into when the price breaks through a support level. These strategies are based on the view that once the price breaks through a support or resistance level, a new trend is likely to begin.\n\nBroker\n\nAn individual or firm acting as an intermediary to bring together buyers and sellers, typically usually for a small commission or fee.\n\nBull",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "cally usually for a small commission or fee.\n\nBull market\n\nA market distinguished by rising prices. Bullish investors have a positive opinion about a market, believing that prices will continue to rise.\n\nBullion\n\nPrecious metals such as gold, silver, platinum or palladium in the form of bars or ingots.\n\nBundesbank\n\nCentral bank of Germany.\n\nBuy limit order\n\nA conditional trading order that indicates a security may be purchased only at the designated price or lower. Also see Take-profit order.\n\nBuy position\n",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " lower. Also see Take-profit order.\n\nBuy position\n\nA position in the market that would profit from a rising market price, or make a loss should prices fall.\n\nBuy stop- entry order\n\nWhen you buy a security that is entered at a price above the current offer price. It is triggered when the market price touches or goes through the specified stop price.\n\nC\nCable\n\nA term referring to the sterling/US dollar exchange rate: the rate was originally transmitted between the London and New York exchanges via the transat",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " the London and New York exchanges via the transatlantic telegraph cable beginning in the mid-1800s, hence the name.\n\nCAC 40\n\nA market capitalisation weighted index of the largest 40 companies listed on the Paris stock exchange. The CAC index is published by the Societe des Bourse Francaises.\n\nCandlestick chart\n\nAs with a bar chart, this graph shows the high, low, opening and closing prices, and the shape of the candle reflects the relationship between these prices. The candles are either green or red, depe",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " prices. The candles are either green or red, depending on whether the closing price is higher than the opening price (green) or below it (red). The main body, or ‘wax’, represents the range between the opening and closing price and the ‘wicks’ show the highs and lows. It shows a visual representation of the prevailing trend and current market sentiment.\n\nCapital\n\nThe wealth, either monetary or in assets, owned by an individual or company.\n\nCarry cost\n\nThe cost incurred as a result of holding a position (eg",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ost incurred as a result of holding a position (eg the carry cost incorporated into the price of a commodity future consists of insurance costs, storage costs, interest charges and other related costs).\n\nCarry trade\n\nA strategy in which a trader sells a certain currency with a low interest rate and uses the funds to purchase a different currency yielding a higher interest rate, attempting to capture the difference between the rates. Common low yielding currencies include the USD and JYP and common high yiel",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ncies include the USD and JYP and common high yielding currencies include the AUD and NZD.\n\nCash market\n\nThe actual, underlying market on which derivatives contracts are based.\n\nCash price\n\nThe price of an asset for immediate delivery. In other words, the actual price of an instrument right now. This term is often used for stock indices, whereas the synonymous term of spot is more often applied to forex and commodity prices. Also see Spot rate.\n\nCentral bank\n\nA government or quasi-governmental organisation ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "\n\nA government or quasi-governmental organisation that manages a country's monetary policy. For example, the UK’s central bank is the Bank of England, and the US central bank is the Federal Reserve.\n\nChannel\n\nAn upward or downward trend on a chart where the boundaries are marked by two straight lines. A break above or below the channel lines signals a potential change in trend.\n\nCharting\n\nA range of techniques that use past price charts, along with other indicators, to anticipate future price movements.\n\nCl",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "icators, to anticipate future price movements.\n\nClose out\n\nSelling a buy position or buying back a sell position, which closes the position, so that you no longer have any exposure to changes in the market price.\n\nClosed position\n\nAn equal and opposite transaction (for instance buying 1000 BT shares then selling 1000 BT shares) which results in the position automatically being closed.\n\nClosing price\n\nThe closing price is the last price for a tradable instrument at the time the market closes.\n\nCommission\n\nA ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ent at the time the market closes.\n\nCommission\n\nA fee charged by a broker or agent for carrying out transactions/orders.\n\nCommodity\n\nA physical good, such as food, metal or fuel, that is interchangeable with other commodities of the same type. The quality of a commodity may differ slightly, but it is basically uniform across all producers, as any commodities that are traded on an exchange must meet specific minimum standards. A commodity is any basic good that investors can ‘buy’ or ‘sell’. Some popular com",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "at investors can ‘buy’ or ‘sell’. Some popular commodities include: crude oil, coffee, gold, natural gas, silver, corn, sugar, cotton and wheat.\n\nConsumer Price Index (CPI)\n\nAn index that measures changes in the price of goods and services purchased by consumers. The figure measures the average change over time in the price of a sample of various common goods and services purchased by typical urban households.\n\nContango\n\nA situation where the futures price of a product is above the expected future spot pric",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "f a product is above the expected future spot price. Also see Backwardation.\n\nContract (unit or lot)\n\nThe standard trading unit on certain exchanges. For stock index, forex and commodity positions, it is the amount of base currency profit or loss per point movement in the market.\n\nContract for difference (CFD)\n\nContracts for difference (CFDs) are derivative products which enable you to trade on the price movement of underlying financial assets (such as indices, shares and commodities). A CFD is an agreement",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "es, shares and commodities). A CFD is an agreement to exchange the difference in the value of an asset from the time the contract is opened until the time at which it is closed. With a CFD, you never actually own the asset or instrument you have chosen to trade, but can still benefit from, if the market moves in your favour.\n\nControlled risk\n\nA position which has a strictly limited maximum loss by virtue of a guaranteed stop. Also see Limited risk.\n\nCore inflation\n\nA measure of inflation that excludes items",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "lation\n\nA measure of inflation that excludes items that are subject to volatile price movements. Vegetable prices are an example of items where prices fluctuate widely based on seasonal conditions. These products are excluded from the calculation as they can give a false measure of inflation because prices can diverge from the overall trend.\n\nCorporate Action\n\nAny event initiated by a corporation which impacts its shareholders. For some events, shareholders may or must respond to the corporate action or sel",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "may or must respond to the corporate action or select from a list of possible actions. Examples of corporate actions include dividend payments, mergers, rights issues and stock splits. Also see Dividend and Rights issue.\n\nCross currency\n\nA pair of currencies traded in forex that do not include the US dollar, for example EUR/JPY.\n\nCross rate\n\nAn exchange rate between two currencies, both of which are not the official currency of the country in which it is quoted. Also refers to currency quotes that don’t inv",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ted. Also refers to currency quotes that don’t involve the US dollar.\n\nCrossed price\n\nA situation where the bid price exceeds the offer price. This is usually indicative of an issue on the venue or of the market being in an auction period.\n\nCurrency pair\n\nRefers to the price quotation of currencies traded in the foreign exchange market. To determine the value of a currency, it must be compared to the currency of another country (example GBP/USD). In currency pairs, the price amount shows how much of the sec",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " pairs, the price amount shows how much of the second currency is required to buy one unit of the first currency.\n\nD\nDaily charts\n\nCharts that encapsulate the daily price movement of an instrument, for example a currency pair, index or share.\n\nData releases\n\nGlobal economic statistics that are normally released at regular intervals, often monthly. The data can have a varying impact on the financial market, depending on factors such as when it‘s released and the level of economic insight it provides.\n\nDAX 40",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "the level of economic insight it provides.\n\nDAX 40\n\nA market capitalisation weighted index of the top 40 companies listed on the Frankfurt Stock Exchange in Germany. This is referred to as the ’Germany 40’ on our website and trading platform.\n\nDay order\n\nAn order to buy or sell an instrument that will expire automatically at the end of the day if it’s not executed on the day the order has been placed.\n\nDay trading\n\nThe process of entering and closing out trades within the same day or trading session.\n\nDeali",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "des within the same day or trading session.\n\nDealing spread\n\nThe difference between the buying and selling price of a contract.\n\nDeposit\n\nThe funds required to initiate and maintain an open CFD trading position. Since CFDs are traded on margin, the deposit is only a fraction of the full value of the trade and is not the total amount that can be lost on a trade.\n\nDepreciation\n\nA fall in the value of an asset.\n\nDiversification\n\nAn investment strategy that aims to manage risk through variety within an investor",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " to manage risk through variety within an investor's trading portfolio. Different components are chosen from a range of different industry sectors, so it’s unlikely that all of the investments will fluctuate in the same direction. The idea is that the portfolio as a whole will display more consistent, stable results than any of the individual components in the portfolio.\n\nDividend\n\nThat part of a company’s profit after tax that is distributed to its shareholders. Dividends are usually distributed in cash, b",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ders. Dividends are usually distributed in cash, but can also take the form of stocks. Also known as payouts.\n\nDividends\n\nA dividend is a distribution of a portion of a company's earnings, decided by the board of directors, to a class of its shareholders. Dividends can be issued as cash payments, as shares of stock, or other property.\n\nDove, dovish\n\nThe opposite of hawk, a dove refers to an economic policy advisor supporting monetary policies with lower interest rates as a means of encouraging economic grow",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "rest rates as a means of encouraging economic growth.\n\nDow Jones Industrial Average (Dow)\n\nThe Dow is the second oldest stock market index in the US and the most widely used indicator of the overall condition of the US stock market. It measures the performance of a selection of 30 blue-chip, publicly owned companies in the US.\n\nDowntrend\n\nA price trend characterised by a series of lower highs and lower lows.\n\nE\nEconomic driver\n\nChange in the economy that leads to changes in the market price of investments, ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ds to changes in the market price of investments, such as shares, commodities or property.\n\nEconomic indicator\n\nA government-issued statistic that indicates current economic growth and stability. Common indicators include employment rates, gross domestic product (GDP), inflation and retail sales.\n\nElectronic Currency Network (ECN)\n\nA virtual exchange for FX transactions.\n\nElliott wave theory\n\nDeveloped by RN Elliott, the Elliott Wave theory is a method of technical analysis based on the assumption of predic",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "chnical analysis based on the assumption of predictability, by identifying a certain flow and structure to the price movement of financial instruments.\n\nEquity\n\nA stock or share representing an ownership interest.\n\nEuro\n\nThe monetary unit of the eurozone, currently used by 19 European Union countries (Germany, France, Italy, Spain, Portugal, Belgium, The Netherlands, Luxembourg, Austria, Ireland, Finland, Greece, Cyprus, Malta, Slovakia, Slovenia, Estonia, Latvia and Lithuania).\n\nEx-dividend date\n\nThe first",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "atvia and Lithuania).\n\nEx-dividend date\n\nThe first trading day on which the buyer of a share is no longer entitled to payment of the current dividend.\n\nExchange\n\nA marketplace in which securities, commodities, derivatives and other financial instruments are traded. The core function of an exchange - such as a stock exchange - is to ensure fair and orderly trading, as well as efficient dissemination of price information for any securities trading on that exchange. Exchanges give companies, governments and ot",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ange. Exchanges give companies, governments and other groups a platform to sell securities to the investing public. An exchange may be a physical location where traders meet to conduct business or an electronic platform.\n\nExecute and eliminate order\n\nA limit order to execute at the current market price or worse. If the order is not filled in its entirety down to the specified order level then any remaining balance will be cancelled.\n\nExecution-only stockbroker\n\nStockbroker who offers clients an inexpensive ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "er\n\nStockbroker who offers clients an inexpensive trading facility without advice, research or recommendations pertaining to investment style or policy.\n\nExpiration date\n\nThe last date that a particular contract can be traded.\n\nExpiration/ Expiry\n\nSome CFD markets have a fixed duration. For example futures contracts will expire at a pre-specified date and time in the future. At this point a futures contract is said to have expired and is awaiting settlement. Settlement is when the expired contract is closed",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " Settlement is when the expired contract is closed at a level normally relating to the market at the time of expiry.\n\nExposure\n\nThe level of an investment which is at risk. The higher the exposure, the bigger the potential loss or gain.\n\nF\nFair value\n\nThe premium (or discount) of a futures contract against its underlying spot/cash instrument that normally consists of an interest and dividend component. The fair value represents the rational pricing of a futures contract such that no arbitrage opportunity ex",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "res contract such that no arbitrage opportunity exists between the futures and cash.\n\nFibonacci\n\nTechnical analysis ratios used in trading to identify future price movements – named after mathematician Leonardo Fibonacci. The most popular Fibonacci tools are retracements and extensions.\n\nFill\n\nThe execution of an order.\n\nFill or kill order\n\nA limit order that will only be executed if it can be filled entirely to your specified order level. Otherwise it will be cancelled.\n\nFinancial Conduct Authority (FCA)\n\n",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "be cancelled.\n\nFinancial Conduct Authority (FCA)\n\nThe authority responsible for supervising financial services firms in the UK. One of the FCA’s roles is to regulate the conduct of brokers and dealers in securities, options, shares, spread bets and CFDs so clients get a fair deal.\n\nFinancing costs\n\nCFD share positions carried overnight will incur financing costs for the full consideration of the position. If you open a position with a 5% margin, overnight finance will be based on 100% of the balance. Client",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "nance will be based on 100% of the balance. Clients who hold a long position will pay interest; clients who are short may receive interest.\n\nFiscal policy\n\nFiscal policy refers to governments’ spending policies, which have a significant impact on the overall economy. The policy affects government revenue and spending. When a government runs a deficit (spends more than it earns), it is putting more into the economy than it is taking out, adding to gross domestic product (GDP).\n\nFlexible spread\n\nThe differenc",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "tic product (GDP).\n\nFlexible spread\n\nThe difference between the bid and offer price that a broker can adjust according to market conditions. Also known as dynamic spread, floating spread or variable spread.\n\nFloating profit/ loss\n\nCurrent profit/loss on open positions calculated at current prices.\n\nForeign exchange\n\nThe forex market is made up of banks, commercial companies, central banks, investment management firms, hedge funds, retail forex brokers and investors. It’s a financial market for trading inter",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "vestors. It’s a financial market for trading international currencies. Investors speculate on the relative strength of one currency against another by buying the currency of one country and selling it against another.\n\nForward\n\nA forward trade (or contract) is the price of an asset for delivery at a defined future date, which is also the date of expiry. Most forward trades can be closed prior to the expiry date, to limit any loss or take a profit, for example. FX forwards are a common example of this type o",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "e. FX forwards are a common example of this type of contract.\n\nFree margin\n\nFunds on the trading account which may be used to open a position. It’s calculated as account value less necessary margin.\n\nFTSE 100\n\nA market capitalisation weighted index of the top 100 companies listed on the London Stock Exchange. This is often used as an indicator to assess the broader UK market.\n\nFundamental analysis\n\nThis involves analysing and valuing financial assets based on factors such as news, financial statements and e",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "n factors such as news, financial statements and earnings forecasts, company strategy and risk assessments, demand and supply forecasts, projections of future economic growth, industry developments and government policy. In fundamental analysis, an investor uses real data to evaluate a stock’s value rather than using charts and technical analysis to make trading decisions.\n\nFutures\n\nA future rate is notionally an agreement to conduct a transaction at some specified time in the future, with the price agreed ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ecified time in the future, with the price agreed now. A futures CFD will automatically expire at a specified time in the future, whereas a spot or cash CFD has no such expiry time. Often the price of a future contract will differ from the cash price. Also see Fair value, Expiration/expiry.\n\nG\nGapping\n\nThe phenomenon of a market trading at a price away from the previous traded price without trades occurring at intervening prices; it more usually, but not necessarily, relates to when a market resumes trading",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "essarily, relates to when a market resumes trading after a period of closure. Also see Slippage.\n\nGearing\n\nGearing is a measure of leverage used, usually expressed as a percentage. A highly leveraged trade would require a small initial outlay in comparison to the notional value of the trade, and can be seen as high risk. Small price movements create amplified gains or losses, and therefore losses can exceed deposits made. Also see Leverage.\n\nGood-for-day (day order)\n\nAn order type that will expire if not fi",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "y order)\n\nAn order type that will expire if not filled by the end of the day. See also Order to open, Good-till-cancelled, Fill.\n\nGood-till-cancelled (GTC)\n\nUnlike good-for-day orders, GTC orders remain active on the account waiting for a fill unless cancelled before being filled. See also Order to open, Good-for-day, Fill.\n\nGreenback\n\nA slang term for the US dollar.\n\nGross domestic product (GDP)\n\nGDP is the value of goods and services produced in a country including exports, minus imports made. It’s a meas",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "including exports, minus imports made. It’s a measurement of a country’s overall economic activity, and can also be a gauge for its standard of living.\n\nGuaranteed stop-loss order (GSLO)\n\nA stop-loss order is an order to buy or sell when the market reaches the 'stop' price, which allows you to limit your losses. Unlike a standard stop-loss order, a guaranteed stop-loss order (GSLO) is unaffected by slippage or gapping and guarantees the price your trade will be closed out at. There is a premium to pay when ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " be closed out at. There is a premium to pay when placing the GSLO with us; however we will refund this in full if the trade is closed out without the GSLO being executed.\n\nH\nHawk, hawkish\n\nAn economic policy advisor who favours relatively higher interest rates to keep inflation under control or curb rapid economic growth. See also Dove.\n\nHedge\n\nA way of reducing the risk of losses that may occur if interest rates, share prices or foreign exchange rates move in the wrong direction. This usually involves the",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " in the wrong direction. This usually involves the use of CFD or futures contracts.\n\nHolding costs\n\nPositions that are held open past 17:00 New York time will incur holding costs. These holding costs will be calculated based on the notional potentially size of the position. Also see Financing costs.\n\nI\nIlliquid market\n\nA market with relatively less aggregate volume in the order book. In an illiquid market, a small amount of business often moves prices by a disproportionate amount, and bid and offer prices c",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "isproportionate amount, and bid and offer prices can be far apart.\n\nIlliquidity\n\nThe difficulty of changing your assets to cash because of a lack of demand for the asset you're trying to sell. As a market maker, we provide liquidity by constantly quoting a bid and offer spread. Also see Liquidity.\n\nIndex\n\nAn index, such as the FTSE 100 or S&P 500, gauges the prosperity or value of a section of the stock market. It is calculated from the prices of selected stocks, usually using a weighted average. It is not ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ocks, usually using a weighted average. It is not possible to invest directly in an index; instead investors trade in funds or other products that track the movement of an index.\n\nIndustrial production\n\nA monthly economic indicator that measures changes in output for the UK’s industrial sector, including manufacturing, mining and utilities.\n\nInflation\n\nAn increase in the general price of goods and services.\n\nInflation rate\n\nA measure of inflation that occurs in a given period (a year or calendar quarter for",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " in a given period (a year or calendar quarter for example). The inflation rate shows us how quickly the general price of goods and services is rising.\n\nInitial Public Offering (IPO)\n\nThe process by which a company is floated on the stock market for the first time. Offering shares to the investment public is a way of raising capital for further expansion. Also known as New issue.\n\nInstant execution\n\nAn order that is executed at the price displayed on the screen. If the price isn’t available a requote can be",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "een. If the price isn’t available a requote can be offered as a new two-way price, at which you can resubmit the order or choose to cancel it.\n\nInterbank rates\n\nFX rates quoted to each other by international banks.\n\nInterest\n\nCash adjustments made to reflect the economic effect of owing or receiving the notional amount of equity controlled by a CFD position.\n\nIntraday trading\n\nTrading where positions are opened and then closed out within the same trading day.\n\nJ\nJapanese candlestick charts\n\nJapanese candles",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": ".\n\nJ\nJapanese candlestick charts\n\nJapanese candlestick charts are similar to bar charts in that each ‘candle’ shows the opening price, closing price, high price and low price for the period. The candles are either green or red, depending on whether the closing price is higher than the opening price (green) or below it (red). The main body, or ‘wax’, represents the range between the opening and closing price and the ‘wicks’ show the highs and lows.\n\nK\nKiwi\n\nA slang term often used to reference the New Zealan",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " slang term often used to reference the New Zealand dollar (or NZD), which is New Zealand's base unit of currency.\n\nL\nLast dealing day\n\nThe last day on which you may trade in a particular market. This may or may not coincide with the settlement date for that market.\n\nLeverage\n\nLeverage allows traders to gain a large exposure with a relatively small outlay. This has the effect of amplifying profit or loss. A leverage of 1:100 means that in order to open and maintain a position the necessary margin is one hun",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "aintain a position the necessary margin is one hundred times less than the transaction size.\n\nLibor (London InterBank Offered Rate)\n\nThe interest rate charged between banks in London for short-term loans and a key benchmark that influences many other interest rate charges/products. Individual currency denominations have an associated Libor. It is produced for ten currencies with 15 maturities quoted for each, ranging from overnight to 12 months, producing 150 rates each business day.\n\nLimit order\n\nA limit o",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "0 rates each business day.\n\nLimit order\n\nA limit order is an order to buy or sell a product at a specific price. A limit order to buy at a target price with CMC Markets is executed at the target price or lower, when the buy price is equal to or lower than the target price. A limit order to sell at a target price with CMC Markets is executed at the target price or higher, when the sell price is equal to or higher than the target price.\n\nLimited risk\n\nA trade which has a strictly limited maximum loss. Also se",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "which has a strictly limited maximum loss. Also see Controlled risk.\n\nLine charts\n\nLine charts are created by connecting a series of data points, usually past price closes, with a line. They are the most basic type of charts used in financial markets.\n\nLiquid market\n\nA liquid market has sufficient volume of two-way business for a large transaction to occur with little or no impact on price. Such a market will normally exhibit tight bid-offer spreads.\n\nLiquidity\n\nThe level of continual buy and sell activity ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ity\n\nThe level of continual buy and sell activity making up market demand and indicating the ease with which investors can undertake transactions.\n\nLiquidity providers\n\nA liquidity provider is an individual or institution which acts as a market maker in a given asset class. In the world of Forex the majority of global liquidity is provided by a number of big name investment banks (referred to as Tier 1 liquidity providers).\n\nLog file\n\nAn ongoing journal of your trading activity.\n\nLong position\n\nA position t",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "our trading activity.\n\nLong position\n\nA position taken in anticipation of a rising market. To go long means to open a ‘buy’ position.\n\nLong-term trading\n\nIn the context of CFDs, longer-term trading refers to strategies where the average duration of open positions would be between a week and several months.\n\nLoonie\n\nA slang term for the Canadian dollar.\n\nLot size\n\nIt is the standardised quantity of a financial instrument, such as base currency, underlying asset or shares, per contract.The last day on which y",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "et or shares, per contract.The last day on which you may trade in a particular market. This may or may not coincide with the settlement date for that market.\n\nLeverage\n\nLeverage allows traders to gain a large exposure with a relatively small outlay. This has the effect of amplifying profit or loss. A leverage of 1:100 means that in order to open and maintain a position the necessary margin is one hundred times less than the transaction size.\n\nLibor (London InterBank Offered Rate)\n\nThe interest rate charged ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "nterBank Offered Rate)\n\nThe interest rate charged between banks in London for short-term loans and a key benchmark that influences many other interest rate charges/products. Individual currency denominations have an associated Libor. It is produced for ten currencies with 15 maturities quoted for each, ranging from overnight to 12 months, producing 150 rates each business day.\n\nLimit order\n\nA limit order is an order to buy or sell a product at a specific price. A limit order to buy at a target price with CM",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ce. A limit order to buy at a target price with CMC Markets is executed at the target price or lower, when the buy price is equal to or lower than the target price. A limit order to sell at a target price with CMC Markets is executed at the target price or higher, when the sell price is equal to or higher than the target price.\n\nLimited risk\n\nA trade which has a strictly limited maximum loss. Also see Controlled risk.\n\nLine charts\n\nLine charts are created by connecting a series of data points, usually past ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " connecting a series of data points, usually past price closes, with a line. They are the most basic type of charts used in financial markets.\n\nLiquid market\n\nA liquid market has sufficient volume of two-way business for a large transaction to occur with little or no impact on price. Such a market will normally exhibit tight bid-offer spreads.\n\nLiquidity\n\nThe level of continual buy and sell activity making up market demand and indicating the ease with which investors can undertake transactions.\n\nLiquidity p",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "investors can undertake transactions.\n\nLiquidity providers\n\nA liquidity provider is an individual or institution which acts as a market maker in a given asset class. In the world of Forex the majority of global liquidity is provided by a number of big name investment banks (referred to as Tier 1 liquidity providers).\n\nLog file\n\nAn ongoing journal of your trading activity.\n\nLong position\n\nA position taken in anticipation of a rising market. To go long means to open a ‘buy’ position.\n\nLong-term trading\n\nIn th",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "o open a ‘buy’ position.\n\nLong-term trading\n\nIn the context of CFDs, longer-term trading refers to strategies where the average duration of open positions would be between a week and several months.\n\nLoonie\n\nA slang term for the Canadian dollar.\n\nLot size\n\nIt is the standardised quantity of a financial instrument, such as base currency, underlying asset or shares, per contract.\n\nM\nMajor currency pairs\n\nThe most heavily traded currency pairs in the FX market, including: EUR/USD, USD/JPY, GBP/USD and USD/CHF.",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " including: EUR/USD, USD/JPY, GBP/USD and USD/CHF.\n\nMargin\n\nCFD trading requires investors to deposit a small percentage of the overall cost that would be required if they were to purchase outright the equivalent product in the physical market. Even though the investor’s outlay is small in comparison to the value of the whole position, the investor will still be exposed to the same potential profit and loss. This means that your potential return on investment is magnified, as are your potential losses. Some",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "t is magnified, as are your potential losses. Sometimes called 'variation margin'.\n\nMargin call\n\nA broker's request to an investor using margin to deposit additional funds. Margin calls occur when an account's funds fall to a specific value calculated by the broker, or if one or more of the products bought, effectively with borrowed money, decreased in value past a certain point.\n\nMark-to-market\n\nThe daily adjustment of an account to reflect accrued profits and losses often required to calculate variations ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "and losses often required to calculate variations in margins.\n\nMarket capitalisation (MCAP)\n\nMarket capitalisation refers to the value of a company’s shares. The figure is reached by multiplying the number of shares that have been issued by the current share price. Investors find the MCAP figure useful for determining the size of a company.\n\nMarket execution\n\nAn order that is executed at the best price available in the market, with no requotes.\n\nMarket order\n\nAn order that you use to specify the direction a",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "\n\nAn order that you use to specify the direction and size of a trade, but not the price. This ensures your order will be filled as quickly as possible.\n\nMarket-making\n\nThe process of quoting a bid and offer based on speculation, expectation, supply and demand.\n\nMedium-term trading\n\nIn the context of CFDs, this refers to strategies where the trader is prepared to hold positions open for longer than one day but where the average duration of open positions would be no more than a few weeks.\n\nMid-price\n\nThe bid",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "d be no more than a few weeks.\n\nMid-price\n\nThe bid plus the offer, divided by two.\n\nMonetary policy\n\nThe action of central banks to set interest rates and control the amount of money in an economy, with the aim of keeping inflation and unemployment at acceptable levels.\n\nMoving average\n\nThe graphical representation of a smoothed-out price action over a set period of time. Moving averages can help identify a trend, points of entry and potential target levels for stops.\n\nMoving Average Convergence Divergence ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "for stops.\n\nMoving Average Convergence Divergence (MACD)\n\nA chart indicator used in technical analysis to indicate a potential bullish or bearish trend reversal.\n\nN\nNasdaq\n\nThe Nasdaq is the second largest stock exchange in the US and traditionally lists many technology companies, such as Microsoft. The movements of the Nasdaq can have a significant effect on UK markets, particularly the techMARK index of technology, media and telephony companies.\n\nNew issue\n\nA company that is floated on the stock market fo",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "\n\nA company that is floated on the stock market for the first time. Offering shares to the investing public is a way of raising capital for further expansion. Also known as Initial Public Offering (IPO).\n\nNew York Stock Exchange (NYSE)\n\nThe largest and oldest stock exchange in the US.\n\nNikkei 225\n\nA price-weighted index of the top 225 shares listed on the Tokyo stock exchange.\n\nNon-dealing desk (NDD)\n\nAn execution model that allows you to trade directly with numerous market liquidity providers in order to g",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " numerous market liquidity providers in order to get the most competitive bid and ask prices.\n\nNon-farm payrolls\n\nA notable economic indicator normally released on the first Friday of every month by the US Department of Labor. It presents the number of people on the payrolls of all businesses, with the exception of agricultural, local government, private household and non-for-profit. The monthly figure can change significantly, and often leads to a high level of volatility in FX pairs such as EUR/USD, aroun",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "l of volatility in FX pairs such as EUR/USD, around the time of the release. Generally, a high reading is seen as positive (or bullish) for the US dollar, while a low reading is seen as negative (or bearish).\n\nO\nOCO (one cancels the other)\n\nLets you place a sell limit and sell stop order on the same stock at the same time. When either order is executed the other will automatically be cancelled. Also applies to a buy limit and buy stop order.\n\nOffer\n\nA current market price is made up of a level at which you ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "t market price is made up of a level at which you can sell and a level at which you can buy. The level at which you can buy is always the higher of the two prices and is called the offer. Also known as bid/bid price, as on B-Bid, you also mentioned it was known as offer/offer price.\n\nOffer price\n\nThe price at which the seller is willing to sell at. Also known as bid/bid price, as on B-Bid, you also mentioned it was known as offer/offer price.\n\nOnline trading\n\nThe act of buying or selling financial instrumen",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "\n\nThe act of buying or selling financial instruments via the internet using a broker like CMC Markets’ online trading platform.\n\nOpen position\n\nA long or short position which has not been closed out by an equal and opposite position.\n\nOption\n\nThe right, but not the obligation, to buy (‘call option’) or sell (‘put option’) a specific amount of a given stock, commodity, currency, or index at a specified price (the ‘strike price’) during a specified period of time. For the holder, the potential loss is limited",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ime. For the holder, the potential loss is limited to the price paid to acquire the option. When an option is not exercised, it expires.\n\nOrder / order to open\n\nAn instruction by a customer to a broker/trader to buy or sell should a specified price be reached. The order remains valid until executed or cancelled by the customer.\n\nOrder book\n\nWhen bid and offer prices match, new incoming orders are automatically logged against orders on the book. FTSE 100 stocks have been traded on an electronic order book si",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ks have been traded on an electronic order book since 20 October 1997\n\nOscillator\n\nA leading indicator in chart analysis which shows a potential trend reversal before it occurs.\n\nOut-of-hours\n\nOut-of-hours – or extended hours – trading usually refers to trading on an index outside of its main opening hours. At CMC Markets, you can trade on the UK 100, Germany 30, France 40 and Euro 50, 24-hours-a-day from Sunday evening to Friday evening.\n\nOver-the-counter market (OTC)\n\nRefers to trading that is carried out",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "arket (OTC)\n\nRefers to trading that is carried out directly between two parties, without any supervision of an exchange.\n\nP\nPip\n\nNormally used in reference to forex rates, a 'percentage in point' is generally, though not always, the fourth decimal place, ie 0.0001. Traditionally a pip was the smallest point by which a forex rate could move, but this is no longer the case.\n\nPivot points\n\nUsed in technical analysis, pivot points use the previous period’s high, low and close to calculate the current period’s s",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " low and close to calculate the current period’s support and resistance levels.\n\nPortfolio\n\nA collection of investments owned by an individual or company.\n\nPosition\n\nAn open trade that you have in the market.\n\nPosition margin\n\nThe amount of equity that a CFD trader is required to pay in order to open a new position.\n\nPosition sizing\n\nThe size of a position within a particular portfolio. It’s also associated with a risk management technique where an investor calculates the size of each new position so that t",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "calculates the size of each new position so that the maximum likely loss on the position does not exceed a certain amount or a certain percentage of their capital.\n\nProducer Price Index (PPI)\n\nA statistic that measures changes in the price of finished goods and services sold by producers.\n\nProfit and Loss (P&L)\n\nAbbreviation of profit and loss; an account compiled at the end of an accounting period to show gross and net profit or loss. In CFD trading, it shows money gained or loss incurred on a position.\n\nP",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ws money gained or loss incurred on a position.\n\nPurchasing Managers Index (PMI)\n\nAn indicator of economic activity created through surveys completed by mangers in a number of manufacturing companies. It provides a picture of economic conditions within the manufacturing sector, and is often used by investors to predict future GDP numbers for a country's economy.\n\nQ\nQuantitative easing\n\nA measure adopted by central banks to stimulate an economy when traditional monetary policy measures (like cutting interest",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "al monetary policy measures (like cutting interest rates) have failed. The central bank electronically creates funds in its own bank account to purchase previously-issued government bonds, plus private sector and distressed assets (so companies can raise capital). This serves to create more tradable and liquid markets to help stimulate the economy.\n\nQuarterly CFDs\n\nA type of future with periodic expiries spaced three months apart. Prices are normally quoted for the next two or three quarter months. Also see",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "for the next two or three quarter months. Also see Rollover.\n\nQuote\n\nThe two-way market price for a given instrument; because it’s two-way, you can buy or sell, according to whether you think prices will rise or fall.\n\nQuote currency\n\nThe second currency in a pair (for example USD is the counter currency in GBP/USD). Also see Base currency.\n\nR\nRange\n\nWhere the price moves within a defined boundary.\n\nRealised profit/loss\n\nThe amount of money you have made or lost on a position once it has been closed. Realis",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "lost on a position once it has been closed. Realised profit or loss will add to or subtract from your account cash balance.\n\nRelative strength index (RSI)\n\nA chart indicator used in technical analysis. It identifies when trends are coming to the end of their current direction, as well as overbought and oversold market conditions.\n\nRequote\n\nA requote occurs when you request to execute an order at a specific price that is no longer available and you’re offered a different quote. This can happen during fast-mo",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " a different quote. This can happen during fast-moving markets.\n\nResistance level\n\nA term used in technical analysis indicating a price level at which analysis suggests a predominance of selling – and hence a greater likelihood that the price will fail to break through the level.\n\nRetail sales\n\nThis figure represents the total of durable and non-durable goods sales by retailers to consumers. Services are largely excluded from this statistic.\n\nRights issue\n\nAn additional issue of shares by a company to exist",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "n additional issue of shares by a company to existing shareholders at an advantageous, discounted price, usually in order to raise new funds for further development or to finance a new acquisition. A two for five rights issue at 145 cents means that the existing shareholder has the right to acquire a further two shares for every five currently held at a new cost of 145 cents per share acquired.\n\nRollover\n\nClosing an expiring futures position and reopening the position in the next tradeable future. In forex,",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "e position in the next tradeable future. In forex, the value of the process is measured by the interest rate differential between the two currencies. There’s usually a small cost for rolling over positions.\n\nRunning profit/loss\n\nShows how your open positions are performing: the unrealised money that you would gain or lose on your open positions if they were closed at prevailing market prices.\n\nS\nS&P 500\n\nA market capitalisation weighted index of the top 500 companies listed in the New York stock exchange (N",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "companies listed in the New York stock exchange (NYSE) or the NASDAQ. Often used as a gauge of sentiment for the US market.\n\nScalping\n\nA trading strategy that involves placing short-term trades, sometimes less than a minute long, usually to try and capture small price movements.\n\nSector\n\nA distinct subset of a market whose components share similar characteristics. Stocks are often grouped into different sectors depending upon the company's business. For example the FTSE 100 has banking, oil & gas and pharma",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "ple the FTSE 100 has banking, oil & gas and pharmaceutical sectors.\n\nSell limit / limit sell\n\nA conditional trading order that indicates an instrument may be sold only at the designated price or higher.\n\nSell stop\n\nAn order to open a sell position at a price lower than the price at the moment of placing the order. It is subject to price depth ladder and can be slipped to the current market price.\n\nSelling short\n\nThis is practice of selling shares that you do not own in the hope that the share price falls be",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " not own in the hope that the share price falls before you have to settle the contract. If the price does fall you can then buy the shares at the lower price and pocket the difference. Also see Shorting.\n\nSettlement\n\nThe process of a position closing against a specified market level once the position has gone beyond its last dealing time. Also see Expiry.\n\nShorting\n\nA form of trading where the initial transaction is to sell, for example a CFD position taken in anticipation of a falling market. The position ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "in anticipation of a falling market. The position is closed with a buy trade. The trader will profit if the price falls and lose if it rises. When trading FX it refers to selling the base currency against the quote currency.\n\nSlippage\n\nThe difference between the requested level of an order and the actual price at which it was executed. Slippage can occur during periods of higher volatility when market prices move rapidly or gap. Also see Fill and Gapping.\n\nSpot price\n\nThe price quoted for immediate settleme",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "pot price\n\nThe price quoted for immediate settlement or delivery of a currency, index, commodity or share (that is payment for and delivery of a product). It’s the current price at which a commodity or currency can be bought or sold at that specific time.\n\nSpot rate\n\nAn exchange rate for immediate settlement.\n\nSpread\n\nThe difference between the bid and the ask price of a security or asset.\n\nSpread charts\n\nSpread charts show the buy and sell prices plotted into a dual line chart format. A blue line represent",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "to a dual line chart format. A blue line represents the buy price and an orange line represents the sell price; the shaded area is the difference between the two, or ‘the spread’.\n\nStochastic\n\nA chart indicator used in technical analysis to determine potential trend reversals, indicating an overbought or oversold market condition.\n\nStock exchange\n\nA market on which securities are traded.\n\nStock index\n\nStock indices are a compilation of a number of stocks into one total price, allowing investors to easily fo",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "o one total price, allowing investors to easily follow the performance of certain groups of stocks.\n\nStockbroker\n\nAn exchange member firm which provides advice and dealing services to the public as well as trading on its own account.\n\nStop entry order\n\nStop-entry orders allow you to enter a transaction at a selected target price and within a set time period. A stop-entry order to buy is an order at a price above the prevailing market price. A stop-entry order to sell is an order at a price below the prevail",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "r to sell is an order at a price below the prevailing market price. Stop-entry orders are subject to potential slippage.\n\nStop-loss\n\nAn order placed to automatically close your position when the price reaches your specified stop-loss trigger price. A stop-loss order is designed to limit a loss on a position. This is not always guaranteed, however, as market conditions may cause the trade to be executed at a slightly different price, due to market gapping or slippage. Also known as a stop order.\n\nStop order\n",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "slippage. Also known as a stop order.\n\nStop order\n\nAn order to close a position when prices pass a certain point. A stop order can be attached to an existing position (known as a stop-loss) or used to initiate a new position (see Order to open).\n\nStrike price\n\nThe price at which a contract can be exercised or settled against in reference to options trading.\n\nSupport\n\nA price level that the market doesn’t fall below for some time. When prices fall to a support level the weight of buying outweighs selling and",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "t level the weight of buying outweighs selling and prices tend to be pushed up again. A number of different trend troughs often occur at a support level.\n\nSupport level\n\nA technique used in technical analysis to indicate a price floor at which you would expect the price to 'bounce' off. A price point where it is anticipated buyers will enter the market and 'support' the price. The opposite of this is resistance.\n\nSwissie\n\nA slang term for the Swiss franc.\n\nT\nTake-profit order\n\nAn order to close an open posi",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "\nTake-profit order\n\nAn order to close an open position at a more profitable price than the prevailing market price.\n\ntechMARK\n\nThis market groups together technology companies from across the market. It has its own indices: the FTSE techMARK 100 and the FTSE techMARK All-share.\n\nTechnical analysis\n\nA technique used to try and predict future movements of a security, commodity or currency, based solely on past price movements and volume levels. It examines charts and historical performance to forecast prices ",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "rts and historical performance to forecast prices by analysing market data, such as historical price trends, averages and volumes.\n\nTick\n\nA single price movement which can be either positive or negative.\n\nTom-next charges\n\nIn foreign exchange, the cost of holding a position overnight. Short for tomorrow-next, it normally incorporates the interest considerations in simultaneously holding and owing the notional and base currencies as well as being influenced by the relative availability of the associated curr",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "y the relative availability of the associated currencies.\n\nTrade balance\n\nThis statistic reveals the difference between a country’s exports and imports of goods and services, such as cars, electronics, textiles, banking and insurance.\n\nTrade size\n\nThe size of the underlying position that you are trading. It governs how much you make or lose on a trade for every point of movement in the price of the market.\n\nTrailing stop\n\nTrailing stops are a special type of stop-loss order that trail behind the market pric",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": " stop-loss order that trail behind the market price when the market moves in your favour.\n\nTransaction costs\n\nThe costs you incur when trading financial products. These costs include commission (on shares), financing and spreads.\n\nTransaction date\n\nThe date a trade occurs.\n\nTreasury\n\nA bond issued by a government. Bonds issued by the UK government are called gilt-edged stocks, commonly referred to as gilts.\n\nTrend\n\nThe general direction in which prices tend to move.\n\nTrend lines\n\nA straight line drawn acros",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "to move.\n\nTrend lines\n\nA straight line drawn across a chart that indicates the overall trend. In an upward trend, the line is drawn below, and acts as a support line; the opposite holds true for a downward trend. Once the asset breaks the trend line, the trend is considered to be invalid.\n\nTwo-way price\n\nWhen both a bid (sell) and offer (buy) rate is quoted for a transaction.\n\nU\nUnderlying\n\nA term used in derivatives trading, such as with CFDs. A derivative is a financial instrument whose price is based (de",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "is a financial instrument whose price is based (derived) from a different asset. The underlying is the financial instrument (eg, stock, futures, commodity, currency, index) on which a derivative's price is based.\n\nUnemployment claims\n\nThis statistic represents the number of individuals who filed for unemployment insurance for the first time during the past week. This is the US’s earliest jobs-related economic data release.\n\nUptick\n\nA price quoted that is higher than the previous quote.\n\nV\nVolatility\n\nAn exp",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "her than the previous quote.\n\nV\nVolatility\n\nAn explanation of how quickly the price of a market or instrument rises or falls. A highly volatile market can be risky for short-term investors as they risk buying at a peak or selling in a trough at a loss.\n\nW\nWall Street\n\nAn alternative, well-known term for the New York Stock Exchange (NYSE), the largest stock exchange in the US.\n\nWorking an order\n\nThe process of having an order working that has not yet been executed. Also known as a pending order.\n\nX\nXD\n\nXD is",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "cuted. Also known as a pending order.\n\nX\nXD\n\nXD is a symbol that is used to signify that a security or stock has gone ex-dividend.\n\nY\nYard\n\nA slang trading term for a billion units.\n\nYield\n\nThe income return earned on an investment. There are a number of different types of yield, and in some cases different methods of calculating each type. Yield refers to the dividends received or interest on a security and is usually an annual figure.\n\nYuan\n\nBase unit of currency in China.\n\nZ\nZloty\n\nPolish unit of currenc",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "urrency in China.\n\nZ\nZloty\n\nPolish unit of currency.",
-        "source": "minci.txt"
+        "source": "knowledge_2.txt"
     },
     {
         "text": "# 经典量化金融论文与文章来源\n\n## 建议来源\n1.  **Investopedia**: 金融术语和策略入门的最佳网站。内容清晰易懂，非常适合作为知识库的基础。\n2.  **SSRN (Social Science Research Network)**: 大量金融经济学的工作论文首发地，可以找到许多前沿研究。\n3.  **arXiv q-fin (Quantitative Finance)**: 物理学和计算机学者发表量化金融论文的平台，数学和模型性较强。\n4.  **Google Scholar**: 学术论文的搜索引擎，可以用来查找被广泛引用的经典文献。\n\n## 值得搜索和了解的核心理论与论文\n\n-   **Efficient Market Hypothesis (有效市场假说)**\n    -   *作者*: Eugene Fama\n    -   *核心思想*: 资产价格已完全反映所有可用信息，因此无法持续获得超额回报。这是许多被动投资策略的理论基础。\n\n-   **Capital Asset Pricing Model (CAPM - 资本资产定价模型)**\n    -   *作者*: Wil",
