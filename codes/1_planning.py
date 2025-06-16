@@ -4,7 +4,22 @@ from tqdm import tqdm
 import argparse
 import os
 import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.api_wrapper import api_call  # 使用封装后的 API 调用函数
 from utils import print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
+from finance.adapter import FinanceStrategyAdapter
+from analyze_financial_strategy import FinancialStrategyAnalyzer
+from rl_strategy_optimizer import StrategyOptimizer, prepare_data
+import numpy as np
+
+
+def api_call_sdk_fallback(messages, gpt_version):
+    try:
+        result = api_call(messages, gpt_version)
+        return result["content"]
+    except Exception as e:
+        print(f"API 调用失败: {e}")
+        raise
 
 parser = argparse.ArgumentParser()
 
@@ -200,7 +215,7 @@ ATTENTION: Use '##' to SPLIT SECTIONS, not '#'. Your output format must follow t
 
 # Format Example
 ## Code: config.yaml
-```yaml
+```
 ## config.yaml
 training:
   learning_rate: ...
@@ -212,66 +227,42 @@ training:
 -----
 
 ## Code: config.yaml
-"""
-    }]
+```
+## config.yaml
+training:
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 10
 
-def api_call(msg, gpt_version):
-    if "o3-mini" in gpt_version:
-        completion = client.chat.completions.create(
-            model=gpt_version, 
-            reasoning_effort="high",
-            messages=msg
-        )
-    else:
-        completion = client.chat.completions.create(
-            model=gpt_version, 
-            messages=msg
-        )
+model:
+  type: "CNN"
+  layers:
+    - conv2d:
+        filters: 32
+        kernel_size: 3
+        activation: "relu"
+    - maxpool2d:
+        pool_size: 2
+    - flatten: {}
+    - dense:
+        units: 128
+        activation: "relu"
+    - output:
+        units: 10
+        activation: "softmax"
 
-    return completion 
+dataset:
+  name: "CIFAR-10"
+  path: "/data/cifar10"
+  validation_split: 0.2
 
-responses = []
-trajectories = []
-total_accumulated_cost = 0
+optimizer:
+  type: "adam"
+  learning_rate: 0.001
 
-for idx, instruction_msg in enumerate([plan_msg, file_list_msg, task_list_msg, config_msg]):
-    current_stage = ""
-    if idx == 0 :
-        current_stage = f"[Planning] Overall plan"
-    elif idx == 1:
-        current_stage = f"[Planning] Architecture design"
-    elif idx == 2:
-        current_stage = f"[Planning] Logic design"
-    elif idx == 3:
-        current_stage = f"[Planning] Configuration file generation"
-    print(current_stage)
+loss:
+  type: "sparse_categorical_crossentropy"
 
-    trajectories.extend(instruction_msg)
-
-    completion = api_call(trajectories, gpt_version)
-    
-    # response
-    completion_json = json.loads(completion.model_dump_json())
-
-    # print and logging
-    print_response(completion_json)
-    temp_total_accumulated_cost = print_log_cost(completion_json, gpt_version, current_stage, output_dir, total_accumulated_cost)
-    total_accumulated_cost = temp_total_accumulated_cost
-
-    responses.append(completion_json)
-
-    # trajectories
-    message = completion.choices[0].message
-    trajectories.append({'role': message.role, 'content': message.content})
-
-
-# save
-save_accumulated_cost(f"{output_dir}/accumulated_cost.json", total_accumulated_cost)
-
-os.makedirs(output_dir, exist_ok=True)
-
-with open(f'{output_dir}/planning_response.json', 'w') as f:
-    json.dump(responses, f)
-
-with open(f'{output_dir}/planning_trajectories.json', 'w') as f:
-    json.dump(trajectories, f)
+metrics:
+  - "accuracy"
+```

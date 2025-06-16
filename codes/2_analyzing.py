@@ -1,10 +1,9 @@
 from openai import OpenAI
+from finance.adapter import FinanceStrategyAdapter
 import json
 import os
-from tqdm import tqdm
 import sys
-from utils import extract_planning, content_to_json, print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
-import copy
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import argparse
 
@@ -137,19 +136,6 @@ You DON'T need to provide the actual code yet; focus on a thorough, clear analys
     return write_msg
 
 
-def api_call(msg):
-    if "o3-mini" in gpt_version:
-        completion = client.chat.completions.create(
-            model=gpt_version, 
-            reasoning_effort="high",
-            messages=msg
-        )
-    else:
-        completion = client.chat.completions.create(
-            model=gpt_version, 
-            messages=msg
-        )
-    return completion
 
 
 artifact_output_dir=f'{output_dir}/analyzing_artifacts'
@@ -172,19 +158,17 @@ for todo_file_name in tqdm(todo_file_lst):
     instruction_msg = get_write_msg(todo_file_name, logic_analysis_dict[todo_file_name])
     trajectories.extend(instruction_msg)
         
-    completion = api_call(trajectories)
+    completion = client.chat.completions.create(model=gpt_version, messages=trajectories)
     
-    # response
-    completion_json = json.loads(completion.model_dump_json())
-    responses.append(completion_json)
-    
-    # trajectories
-    message = completion.choices[0].message
-    trajectories.append({'role': message.role, 'content': message.content})
+    # Convert response to dictionary and store
+    completion_dict = completion.to_dict()
+    responses.append(completion_dict)
 
-    # print and logging
-    print_response(completion_json)
-    temp_total_accumulated_cost = print_log_cost(completion_json, gpt_version, current_stage, output_dir, total_accumulated_cost)
+    # Append assistant's message to trajectories
+    trajectories.append({"role": "assistant", "content": completion.choices[0].message.content})
+
+    # Print and log cost
+    temp_total_accumulated_cost = print_log_cost(completion_dict, gpt_version, current_stage, output_dir, total_accumulated_cost)
     total_accumulated_cost = temp_total_accumulated_cost
 
     # save
@@ -203,3 +187,33 @@ for todo_file_name in tqdm(todo_file_lst):
         json.dump(trajectories, f)
 
 save_accumulated_cost(f"{output_dir}/accumulated_cost.json", total_accumulated_cost)
+
+def enhance_with_finance_strategy(paper_content, output_dir):
+    """使用金融策略适配器增强分析过程"""
+    # 加载planning阶段的结果
+    try:
+        with open(os.path.join(output_dir, 'finance_planning.json'), 'r') as f:
+            planning_output = json.load(f)
+    except FileNotFoundError:
+        planning_output = {}
+    
+    config = {
+        'initial_balance': 10000,
+        'commission': 0.001,
+        'risk_free_rate': 0.02
+    }
+    
+    strategy_dataset_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        'datasets',
+        'merged_strategy_dataset.json'
+    )
+    
+    adapter = FinanceStrategyAdapter(strategy_dataset_path, config)
+    enhanced_analysis = adapter.enhance_analysis(paper_content, planning_output)
+    
+    # 保存增强的分析结果
+    with open(os.path.join(output_dir, 'finance_analysis.json'), 'w') as f:
+        json.dump(enhanced_analysis, f, indent=2)
+        
+    return enhanced_analysis

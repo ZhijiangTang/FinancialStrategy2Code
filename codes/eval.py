@@ -1,16 +1,11 @@
-from openai import OpenAI
 import json
 import os
+from openai import OpenAI
+import requests
 import sys
-import argparse
-from utils import read_python_files, extract_planning, content_to_json, \
-        num_tokens_from_messages, read_all_files, extract_json_from_string, get_now_str, print_log_cost
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-client = OpenAI(api_key = os.environ["OPENAI_API_KEY"])
-
-def api_call(request_json):
-    completion = client.chat.completions.create(**request_json)
-    return completion
+client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def main(args):
 
@@ -52,13 +47,13 @@ def main(args):
         for todo_file in todo_file_lst:
             if todo_file.endswith(".yaml"):
                 continue
-            codes += f"```python\n## File name: {todo_file}\n{target_files_dict[todo_file]}\n```\n\n"
+            codes += f"``python\n## File name: {todo_file}\n{target_files_dict[todo_file]}\n```\n\n"
 
         codes += f"```yaml\n## File name: config.yaml\n{config_yaml}\n```\n\n"
     else:
         target_files_dict = read_all_files(target_repo_dir, allowed_ext=[".py", ".yaml", ".yml", ".md", ".sh", ".bash"], is_print=False)
         for file_name, code in target_files_dict.items():
-            codes += f"```## File name: {file_name}\n{code}\n```\n\n" 
+            codes += f"``## File name: {file_name}\n{code}\n```\n\n" 
 
 
     prompt = open(f"{data_dir}/prompts/{eval_type}.txt").read()
@@ -135,7 +130,11 @@ def main(args):
                 "n": generated_n # 10
         }
         
-    completion = api_call(request_json)
+    try:
+        completion = client.chat.completions.create(**request_json)
+    except Exception as e:
+        print(f"[SDK] API 调用失败: {e}")
+        raise e
     completion_json = json.loads(completion.model_dump_json())
         
     score_key = "score"

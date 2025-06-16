@@ -1,8 +1,8 @@
-export OPENAI_API_KEY=""
+#!/bin/bash
 
-
-BASE_URL="https://api.siliconflow.cn/v1"
-GPT_VERSION="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+export OPENAI_API_KEY="${OPENAI_API_KEY}"
+export BASE_URL="https://api.siliconflow.cn/v1"
+GPT_VERSION="Qwen/Qwen2.5-Coder-7B-Instruct"
 
 PAPER_NAME="Transformer"
 PDF_PATH="../examples/Transformer.pdf" # .pdf

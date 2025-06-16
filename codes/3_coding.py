@@ -1,12 +1,9 @@
 from openai import OpenAI
 import json
 import os
-from tqdm import tqdm
-import re
-import sys
-import copy
-from utils import extract_planning, content_to_json, extract_code_from_content, print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
 import argparse
+from codes.utils import read_all_files, extract_planning, content_to_json, get_now_str, print_log_cost
+from finance.adapter import FinanceStrategyAdapter
 
 parser = argparse.ArgumentParser()
 
@@ -106,7 +103,7 @@ def get_write_msg(todo_file_name, detailed_logic_analysis, done_file_lst):
 
 # Format example
 ## Code: {todo_file_name}
-```python
+```
 ## {todo_file_name}
 ...
 ```
@@ -132,21 +129,50 @@ Next, you must write only the "{todo_file_name}".
 ## Code: {todo_file_name}"""}]
     return write_msg
 
+def generate_code_with_gpt(messages, gpt_version):
+    """
+    使用 GPT 模型生成策略代码。
+    """
+    try:
+        completion = client.chat.completions.create(
+            model=gpt_version,
+            messages=messages
+        )
+        return completion.choices[0].message.content
+    except Exception as e:
+        print(f"API 调用失败: {e}")
+        raise
 
-def api_call(msg):
-    if "o3-mini" in gpt_version:
-        completion = client.chat.completions.create(
-            model=gpt_version, 
-            reasoning_effort="high",
-            messages=msg
-        )
-    else:
-        completion = client.chat.completions.create(
-            model=gpt_version, 
-            messages=msg
-        )
-    return completion
+def enhance_with_finance_strategy(paper_content, output_dir, output_repo_dir):
+    """使用金融策略适配器增强代码生成过程"""
+    # 加载analysis阶段的结果
+    try:
+        with open(os.path.join(output_dir, 'finance_analysis.json'), 'r') as f:
+            analysis_output = json.load(f)
+    except FileNotFoundError:
+        return None
     
+    config = {
+        'initial_balance': 10000,
+        'commission': 0.001,
+        'risk_free_rate': 0.02
+    }
+    
+    strategy_dataset_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        'datasets',
+        'merged_strategy_dataset.json'
+    )
+    
+    adapter = FinanceStrategyAdapter(strategy_dataset_path, config)
+    strategy_code = adapter.enhance_coding(analysis_output)
+    
+    # 保存生成的策略代码
+    os.makedirs(os.path.join(output_repo_dir, 'finance'), exist_ok=True)
+    with open(os.path.join(output_repo_dir, 'finance', 'strategy.py'), 'w') as f:
+        f.write(strategy_code)
+        
+    return strategy_code
 
 # testing for checking
 detailed_logic_analysis_dict = {}
@@ -179,7 +205,10 @@ for todo_idx, todo_file_name in enumerate(tqdm(todo_file_lst)):
     instruction_msg = get_write_msg(todo_file_name, detailed_logic_analysis_dict[todo_file_name], done_file_lst)
     trajectories.extend(instruction_msg)
 
-    completion = api_call(trajectories)
+    completion = client.chat.completions.create(
+        model=gpt_version,
+        messages=trajectories
+    )
     # print(completion.choices[0].message)
     
     # response
@@ -220,5 +249,11 @@ for todo_idx, todo_file_name in enumerate(tqdm(todo_file_lst)):
 
     with open(f"{output_repo_dir}/{todo_file_name}", 'w') as f:
         f.write(code)
+
+# 尝试增强金融策略
+try:
+    enhance_with_finance_strategy(paper_content, output_dir, output_repo_dir)
+except Exception as e:
+    print(f"金融策略增强失败: {e}")
 
 save_accumulated_cost(f"{output_dir}/accumulated_cost.json", total_accumulated_cost)

@@ -25,8 +25,9 @@ from openai import OpenAI
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from codes.utils import read_all_files,num_tokens_from_messages,extract_json_from_string,get_now_str,print_log_cost
+from codes.utils import read_all_files, num_tokens_from_messages, extract_json_from_string, get_now_str, print_log_cost
 from tqdm import tqdm
+import requests
 
 # 设置API配置
 os.environ["BASE_URL"] = "https://api.siliconflow.cn/v1"
@@ -50,18 +51,6 @@ class CodeScore():
         self.model = model
         self.eval_result_dir = eval_result_dir
 
-    def api_call(self,request_json):
-        """
-        调用API进行评分。
-
-        参数:
-            request_json (dict): API请求参数
-
-        返回:
-            completion: API返回的完成结果
-        """
-        completion = self.client.chat.completions.create(**request_json)
-        return completion
 
     def read_strategy(self,pdf_json_path):
         """
@@ -153,7 +142,23 @@ class CodeScore():
                     "presence_penalty": 0,
                     "stop": None
             }
-            completion = self.api_call(request_json)
+            try:
+                completion = self.client.chat.completions.create(**request_json)
+            except Exception as e:
+                print(f"[SDK] API 调用失败: {e}. 正在降级为 requests...")
+                # 构造 payload 并使用 requests 调用
+                response = requests.post(
+                    f"{os.environ['BASE_URL']}/chat/completions",
+                    json=request_json["model"],
+                    headers={
+                        "Authorization": os.environ["OPENAI_API_KEY"],
+                        "Content-Type": "application/json"
+                    }
+                )
+                if response.status_code == 200:
+                    completion = response.json()
+                else:
+                    raise Exception(f"HTTP 错误: {response.status_code}, {response.text}")
             completion_json = json.loads(completion.model_dump_json())
             choice = completion_json['choices'][0]
             output = choice['message']['content'].strip()
