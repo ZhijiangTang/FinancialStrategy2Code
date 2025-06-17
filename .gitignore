@@ -2,6 +2,9 @@
 outputs/
 output/
 
+# 忽略语料库
+corpus/
+
 # Python 相关
 __pycache__/
 *.py[cod]
