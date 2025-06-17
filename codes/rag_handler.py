@@ -8,7 +8,7 @@ from openai import OpenAI, OpenAIError
 # --- 配置信息 (请在此处直接修改) ---
 # *******************************************************************
 # ** 重要：请在这里填入您的 SiliconFlow API Key **
-API_KEY = "sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud" 
+API_KEY = "sk-" 
 # *******************************************************************
 
 BASE_URL = "https://api.siliconflow.cn/v1"

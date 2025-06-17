@@ -10,7 +10,7 @@ from markdown import markdown
 import faiss  # Make sure you have faiss-gpu or faiss-cpu installed
 
 # --- 1. 配置区域 ---
-SILICONFLOW_API_KEY = "sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
+SILICONFLOW_API_KEY = "sk-"
 API_URL = "https://api.siliconflow.cn/v1/embeddings"
 BGE_MODEL_NAME = "BAAI/bge-m3"
 

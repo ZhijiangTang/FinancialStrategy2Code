@@ -1,4 +1,4 @@
-export OPENAI_API_KEY="sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
+export OPENAI_API_KEY="sk-"
 
 
 BASE_URL="https://api.siliconflow.cn/v1"

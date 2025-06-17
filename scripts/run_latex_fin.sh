@@ -1,4 +1,4 @@
-export OPENAI_API_KEY="sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
+export OPENAI_API_KEY="sk-"
 
 GPT_VERSION="Qwen/Qwen3-30B-A3B"
 

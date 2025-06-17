@@ -4,7 +4,7 @@ output/
 score/
 
 # 忽略语料库
-corpus/
+# corpus/
 
 # Python 相关
 **/__pycache__/
