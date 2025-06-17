@@ -42,10 +42,7 @@ else:
 # 初始化 RAG
 rag = RAGHandler()
 # 检索相关知识
-rag_context = rag.retrieve(paper_content, k=5)
-# Format context for the prompt
-context_str = "\n\n".join([f"Source: {ctx['source']}\nContent: {ctx['text']}" for ctx in rag_context])
-print(context_str)
+context_str = rag.answer(paper_content)
 ######################################## RAG ########################################
 
 plan_msg = [

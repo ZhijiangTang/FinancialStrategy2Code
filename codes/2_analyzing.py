@@ -82,10 +82,7 @@ for desc in task_list['Logic Analysis']:
 rag = RAGHandler()
 # 检索相关知识
 query = f" {context_lst[0]} "
-rag_context = rag.retrieve(query, k=5)
-# Format context for the prompt
-context_str = "\n\n".join([f"Source: {ctx['source']}\nContent: {ctx['text']}" for ctx in rag_context])
-print(context_str)
+context_str = rag.answer(query)
 ######################################## RAG ########################################
 
 analysis_msg = [

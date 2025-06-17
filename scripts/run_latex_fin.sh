@@ -2,10 +2,11 @@ export OPENAI_API_KEY="sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
 
 GPT_VERSION="Qwen/Qwen3-30B-A3B"
 
-PAPER_NAME="Momentum"
-PDF_LATEX_CLEANED_PATH="../strategies/Momentum.tex" # _cleaned.tex
-OUTPUT_DIR="../outputs/Momentum"
-OUTPUT_REPO_DIR="../outputs/Momentum_repo"
+PAPER_NAME="海龟"
+PS=""
+PDF_LATEX_CLEANED_PATH="../strategies/${PAPER_NAME}.txt" # _cleaned.tex
+OUTPUT_DIR="../outputs/${PAPER_NAME}${PS}"
+OUTPUT_REPO_DIR="../outputs/${PAPER_NAME}${PS}_repo"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_REPO_DIR
