@@ -1,12 +1,15 @@
 # 忽略 output 文件夹
 outputs/
 output/
+score/
 
 # 忽略语料库
 corpus/
 
 # Python 相关
-__pycache__/
+**/__pycache__/
+*.pyc
+
 *.py[cod]
 *$py.class
 *.so

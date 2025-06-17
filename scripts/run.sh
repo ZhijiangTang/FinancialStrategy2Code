@@ -1,6 +1,8 @@
 export OPENAI_API_KEY="sk-cjnnfcatihrikdywnbebqofrrhfyzmzoturkcyyagrnlrjud"
 
-GPT_VERSION="o3-mini"
+
+BASE_URL="https://api.siliconflow.cn/v1"
+GPT_VERSION="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
 
 PAPER_NAME="Transformer"
 PDF_PATH="../examples/Transformer.pdf" # .pdf
