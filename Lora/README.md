@@ -1,3 +1,4 @@
+```markdonw
 FinancialStrategy2Code/
 ├── codes/                  # 核心代码目录
 │   ├── *.py                 # 各阶段处理脚本（PDF解析、提取配置、规划、分析、编码）
@@ -9,8 +10,6 @@ FinancialStrategy2Code/
 │   └──codes/scores.py---#评分
 │   └──codes/merge.py---#合并
 │   └──codes/convert_dataset.py----#转换数据集
-
-
 │
 ├── data/                   # 数据目录
 │   └── merged_strategy_dataset.json  # 合并后的策略数据集
@@ -29,8 +28,7 @@ FinancialStrategy2Code/
 │           └── score.json         # 单次运行评分结果
 │
 └── README.md               # 项目说明文档（见下方模板）
-
-markdown
+```
 
 # Financial Strategy to Code Generation Project
 
@@ -51,7 +49,7 @@ FinancialStrategy2Code/ ├── codes/ # Core scripts for processing, inferenc
 
 Make sure you have the following installed:
 
-- Python 3.x
+- Python 3.12
 - PyTorch
 - Transformers
 - Swift (for LoRA training)
