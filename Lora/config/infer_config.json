@@ -1,0 +1,8 @@
+{
+  "model": "Qwen/Qwen1.5-0.5B-Chat",
+  "model_type": "qwen2",
+  "ckpt_dir": "../output/lora/financial_strategy/v3-20250617-150831/checkpoint-32",
+  "output_dir": "/home/lihang/FinancialStrategy2Code/result/financial_strategy/infer_result",
+  "system": "You are now an expert in financial strategy and also a master of coding. Be able to generate the corresponding python code from the financial strategy I provided.请根据金融策略名称或者描述生成对应的 Python 代码.",
+  "eval_human_eval":false
+}
