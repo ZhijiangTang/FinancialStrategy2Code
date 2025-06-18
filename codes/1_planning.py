@@ -41,7 +41,7 @@ else:
 
 plan_msg = [
         {'role': "system", "content": f"""You are an expert researcher and strategic planner with a deep understanding of experimental design and reproducibility in scientific research. 
-You will receive a research paper in {paper_format} format. 
+You will receive a Financial Strategy in {paper_format} format. 
 Your task is to create a detailed and efficient plan to reproduce the experiments and methodologies described in the paper.
 This plan should align precisely with the paper's methodology, experimental setup, and evaluation metrics. 
 

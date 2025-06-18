@@ -1,7 +1,8 @@
 # 忽略 output 文件夹
 outputs/
 output/
-
+score/
+!/prompts/score/
 # Python 相关
 **/__pycache__/
 *.pyc

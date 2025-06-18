@@ -104,7 +104,9 @@ class CodeScore():
         参数:
             strategy_name (str): 策略名称
             paper_json (dict, optional): 论文内容
+            {"":""}
             codes (str, optional): 生成的代码
+            code:string
             goldcodes (str, optional): 参考代码
             pdf_json_path (str, optional): 论文JSON文件路径
             target_repo_dir (str, optional): 目标代码仓库目录
@@ -128,13 +130,14 @@ class CodeScore():
         msg = [{"role": "system", "content": cur_prompt}]
 
         # 检查token数量
-        try:
-            num_tokens = num_tokens_from_messages(msg)
-        except Exception as e:
-            print(f"[WARNING] An exception was raised while counting tokens for the target repository of {strategy_name}.")
-            print(e)
-            print("-"*40)
-            num_tokens = 0
+        num_tokens = 0
+        # try:
+        #     num_tokens = num_tokens_from_messages(msg)
+        # except Exception as e:
+        #     print(f"[WARNING] An exception was raised while counting tokens for the target repository of {strategy_name}.")
+        #     print(e)
+        #     print("-"*40)
+        #     num_tokens = 0
         assert num_tokens <= 128000
 
         # 评分键名
@@ -153,6 +156,7 @@ class CodeScore():
                     "presence_penalty": 0,
                     "stop": None
             }
+            # print(msg)
             completion = self.api_call(request_json)
             completion_json = json.loads(completion.model_dump_json())
             choice = completion_json['choices'][0]
@@ -186,7 +190,7 @@ class CodeScore():
             if score < 1 or score > 5:
                 print(f"[WARNING] Invalid repsponse: score {score}, Score must be in the range of 1–5.")
                 continue
-            
+            print(score)
             all_scores.append(int(score))
             rationales.append(rationale)
 
@@ -235,5 +239,6 @@ class CodeScore():
 if __name__ == "__main__":
     # 使用示例
     codescore = CodeScore(eval_type="ref_free")
+    # codescore.score(strategy_name="Transformer",pdf_json_path="./examples/Transformer_cleaned.json",target_repo_dir="./outputs/Transformer_repo",gold_repo_dir="")
     codescore.score(strategy_name="Transformer",pdf_json_path="./examples/Transformer_cleaned.json",target_repo_dir="./outputs/Transformer_repo",gold_repo_dir="")
     print("end")

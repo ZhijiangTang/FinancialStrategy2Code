@@ -1,15 +1,15 @@
-export OPENAI_API_KEY=""
+export OPENAI_API_KEY="sk-tvjlpwnkrqkzxhzyqcfigsguyrjczmpjatpzdjfaqnfdcocu"
+export BASE_URL="https://api.siliconflow.cn/v1"
 
 
-BASE_URL="https://api.siliconflow.cn/v1"
 GPT_VERSION="deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
 
-PAPER_NAME="Transformer"
-PDF_PATH="../examples/Transformer.pdf" # .pdf
-PDF_JSON_PATH="../examples/Transformer.json" # .json
-PDF_JSON_CLEANED_PATH="../examples/Transformer_cleaned.json" # _cleaned.json
-OUTPUT_DIR="../outputs/Transformer"
-OUTPUT_REPO_DIR="../outputs/Transformer_repo"
+PAPER_NAME="Turtle"
+PDF_PATH="../examples/Turtle.pdf" # .pdf
+PDF_JSON_PATH="../examples/Turtle.json" # .json
+PDF_JSON_CLEANED_PATH="../examples/Turtle_cleaned.json" # _cleaned.json
+OUTPUT_DIR="../outputs/Turtle"
+OUTPUT_REPO_DIR="../outputs/Turtle_repo"
 
 mkdir -p $OUTPUT_DIR
 mkdir -p $OUTPUT_REPO_DIR

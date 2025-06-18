@@ -1,247 +1,76 @@
-# 📄 Paper2Code: Automating Code Generation from Scientific Papers in Machine Learning
+# Financial Strategy Code Generator
 
-![PaperCoder Overview](./assets/papercoder_overview.png)
+这是一个基于人工智能的金融策略代码生成系统，能够自动生成、分析和优化金融交易策略。
 
-📄 [Read the paper on arXiv](https://arxiv.org/abs/2504.17192)
+## 项目结构
 
-**PaperCoder** is a multi-agent LLM system that transforms paper into a code repository.
-It follows a three-stage pipeline: planning, analysis, and code generation, each handled by specialized agents.  
-Our method outperforms strong baselines on both Paper2Code and PaperBench and produces faithful, high-quality implementations.
-
----
-
-## 🗺️ Table of Contents
-
-- [⚡ Quick Start](#-quick-start)
-- [📚 Detailed Setup Instructions](#-detailed-setup-instructions)
-- [📦 Paper2Code Benchmark Datasets](#-paper2code-benchmark-datasets)
-- [📊 Model-based Evaluation of Repositories](#-model-based-evaluation-of-repositories-generated-by-papercoder)
-
----
-
-## ⚡ Quick Start
-- Note: The following command runs example paper ([Attention Is All You Need](https://arxiv.org/abs/1706.03762)).  
-
-### Using OpenAI API
-- 💵 Estimated cost for using o3-mini: $0.50–$0.70
-
-```bash
-pip install openai
-
-export OPENAI_API_KEY="<OPENAI_API_KEY>"
-
-cd scripts
-bash run.sh
+```
+FinancialStrategy2Code/
+├── api_key/          # API密钥配置目录
+├── assets/           # 静态资源文件
+├── codes/            # 核心代码实现
+│   ├── 1_planning.py     # 策略规划模块
+│   ├── 1.1_extract_config.py  # 配置提取模块
+│   ├── 2_analyzing.py    # 策略分析模块
+│   ├── 3_coding.py       # 代码生成模块
+│   └── utils.py          # 工具函数
+├── data/             # 数据文件目录
+├── datasets/         # 数据集目录
+├── examples/         # 示例代码
+├── myquant_dataset/  # MyQuant数据集
+├── outputs/          # 输出结果目录
+├── prompts/          # 提示词模板
+├── score/            # 评分相关文件
+├── scripts/          # 脚本文件
+└── utils/            # 通用工具函数
 ```
 
-### Using Open Source Models with vLLM
-- If you encounter any issues installing vLLM, please refer to the [official vLLM repository](https://github.com/vllm-project/vllm).
-- The default model is `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct`.
+## 环境要求
 
+- Python 3.8+
+- OpenAI API密钥
+- 其他依赖包（见requirements.txt）
+
+## 安装
+
+1. 克隆仓库：
 ```bash
-pip install vllm
-
-cd scripts
-bash run_llm.sh
+git clone https://github.com/ZhijiangTang/FinancialStrategy2Code
+cd FinancialStrategy2Code
 ```
 
-### Output Folder Structure (Only Important Files)
-```bash
-outputs
-├── Transformer
-│   ├── analyzing_artifacts
-│   ├── coding_artifacts
-│   └── planning_artifacts
-└── Transformer_repo # Final output repository
-```
----
-
-## 📚 Detailed Setup Instructions
-
-### 🛠️ Environment Setup
-
-- 💡 To use the `o3-mini` version, make sure you have the latest `openai` package installed.
-- 📦 Install only what you need:
-  - For OpenAI API: `openai`
-  - For open-source models: `vllm`
-      - If you encounter any issues installing vLLM, please refer to the [official vLLM repository](https://github.com/vllm-project/vllm).
-
-
-```bash
-pip install openai 
-pip install vllm 
-```
-
-- Or, if you prefer, you can install all dependencies using `pip`:
-
+2. 安装依赖：
 ```bash
 pip install -r requirements.txt
 ```
 
-### 📄 (Option) Convert PDF to JSON
-The following process describes how to convert a paper PDF into JSON format.  
-If you have access to the LaTeX source and plan to use it with PaperCoder, you may skip this step and proceed to [🚀 Running PaperCoder](#-running-papercoder).  
-Note: In our experiments, we converted all paper PDFs to JSON format.
+3. 配置API密钥：
+在`api_key`目录下配置必要的API密钥。
 
-1. Clone the `s2orc-doc2json` repository to convert your PDF file into a structured JSON format.  
-   (For detailed configuration, please refer to the [official repository](https://github.com/allenai/s2orc-doc2json).)
+## 主要功能
 
+1. **策略规划**：通过`1_planning.py`进行策略的初始规划和设计
+2. **策略分析**：使用`2_analyzing.py`对策略进行深入分析
+3. **代码生成**：通过`3_coding.py`自动生成可执行的策略代码
+4. **配置管理**：使用`1.1_extract_config.py`处理策略配置
+
+## 使用方法
+
+1. 准备数据：
+   - 将数据文件放置在`data`或`datasets`目录下
+   - 确保数据格式符合要求
+
+2. 运行策略生成：
 ```bash
-git clone https://github.com/allenai/s2orc-doc2json.git
-```
-
-2. Run the PDF processing service.
-
-```bash
-cd ./s2orc-doc2json/grobid-0.7.3
-./gradlew run
-```
-
-3. Convert your PDF into JSON format.
-
-```bash
-mkdir -p ./s2orc-doc2json/output_dir/paper_coder
-python ./s2orc-doc2json/doc2json/grobid2json/process_pdf.py \
-    -i ${PDF_PATH} \
-    -t ./s2orc-doc2json/temp_dir/ \
-    -o ./s2orc-doc2json/output_dir/paper_coder
-```
-
-### 🚀 Running PaperCoder
-- Note: The following command runs example paper ([Attention Is All You Need](https://arxiv.org/abs/1706.03762)).  
-  If you want to run PaperCoder on your own paper, please modify the environment variables accordingly.
-
-#### Using OpenAI API
-- 💵 Estimated cost for using o3-mini: $0.50–$0.70
-
-
-```bash
-# Using the PDF-based JSON format of the paper
-export OPENAI_API_KEY="<OPENAI_API_KEY>"
-
 cd scripts
 bash run.sh
 ```
 
-```bash
-# Using the LaTeX source of the paper
-export OPENAI_API_KEY="<OPENAI_API_KEY>"
+3. 查看结果：
+   - 生成的策略代码将保存在`outputs`目录
 
-cd scripts
-bash run_latex.sh
-```
+## 注意事项
 
-
-#### Using Open Source Models with vLLM
-- The default model is `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct`.
-
-```bash
-# Using the PDF-based JSON format of the paper
-cd scripts
-bash run_llm.sh
-```
-
-```bash
-# Using the LaTeX source of the paper
-cd scripts
-bash run_latex_llm.sh
-```
-
----
-
-## 📦 Paper2Code Benchmark Datasets
-- Huggingface dataset: [paper2code](https://huggingface.co/datasets/iaminju/paper2code)
-  
-- You can find the description of the Paper2Code benchmark dataset in [data/paper2code](https://github.com/going-doer/Paper2Code/tree/main/data/paper2code). 
-- For more details, refer to Section 4.1 "Paper2Code Benchmark" in the [paper](https://arxiv.org/abs/2504.17192).
-
-
----
-
-## 📊 Model-based Evaluation of Repositories Generated by PaperCoder
-
-- We evaluate repository quality using a model-based approach, supporting both reference-based and reference-free settings.  
-  The model critiques key implementation components, assigns severity levels, and generates a 1–5 correctness score averaged over 8 samples using **o3-mini-high**.
-
-- For more details, please refer to Section 4.3.1 (*Paper2Code Benchmark*) of the paper.
-- **Note:** The following examples evaluate the sample repository (**Transformer_repo**).  
-  Please modify the relevant paths and arguments if you wish to evaluate a different repository.
-
-### 🛠️ Environment Setup
-```bash
-pip install tiktoken
-export OPENAI_API_KEY="<OPENAI_API_KEY>"
-```
-
-
-### 📝 Reference-free Evaluation
-- `target_repo_dir` is the generated repository.
-
-```bash
-cd codes/
-python eval.py \
-    --paper_name Transformer \
-    --pdf_json_path ../examples/Transformer_cleaned.json \
-    --data_dir ../data \
-    --output_dir ../outputs/Transformer \
-    --target_repo_dir ../outputs/Transformer_repo \
-    --eval_result_dir ../results \
-    --eval_type ref_free \
-    --generated_n 8 \
-    --papercoder
-```
-
-### 📝 Reference-based Evaluation
-- `target_repo_dir` is the generated repository.
-- `gold_repo_dir` should point to the official repository (e.g., author-released code).
-
-```bash
-cd codes/
-python eval.py \
-    --paper_name Transformer \
-    --pdf_json_path ../examples/Transformer_cleaned.json \
-    --data_dir ../data \
-    --output_dir ../outputs/Transformer \
-    --target_repo_dir ../outputs/Transformer_repo \
-    --gold_repo_dir ../examples/Transformer_gold_repo \
-    --eval_result_dir ../results \
-    --eval_type ref_based \
-    --generated_n 8 \
-    --papercoder
-```
-
-
-### 📄 Example Output
-```bash
-========================================
-🌟 Evaluation Summary 🌟
-📄 Paper name: Transformer
-🧪 Evaluation type: ref_based
-📁 Target repo directory: ../outputs/Transformer_repo
-📊 Evaluation result:
-        📈 Score: 4.5000
-        ✅ Valid: 8/8
-========================================
-🌟 Usage Summary 🌟
-[Evaluation] Transformer - ref_based
-🛠️ Model: o3-mini
-📥 Input tokens: 44318 (Cost: $0.04874980)
-📦 Cached input tokens: 0 (Cost: $0.00000000)
-📤 Output tokens: 26310 (Cost: $0.11576400)
-💵 Current total cost: $0.16451380
-🪙 Accumulated total cost so far: $0.16451380
-============================================
-```
-
-dataset
-- 整理成json：{"strategy":"","code":""}
-  - 数据
-  - loss.py
-  - 
-- 强化学习：
-- loss：大模型来评估模型的输出和真是代码之间的差距 
-  - loss.py loss function(model_out_code, gt):
-      score = api.call(prompt)
-      return score
-
-https://www.myquant.cn/docs/python_strategyies/153
+- 请确保API密钥配置正确
+- 建议在运行前备份重要数据
+- 注意遵守相关金融法规和API使用限制
