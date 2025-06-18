@@ -152,7 +152,7 @@ def format_json_data(data):
 def cal_cost(response_json, model_name):
     model_cost = {
         # gpt-4.1
-        "gpt-4.1": {"input": 2.00, "cached_input": 0.50, "output": 8.00},
+        "Qwen/Qwen3-30B-A3B": {"input": 2.00, "cached_input": 0.50, "output": 8.00},
         "gpt-4.1-2025-04-14": {"input": 2.00, "cached_input": 0.50, "output": 8.00},
 
         # gpt-4.1-mini

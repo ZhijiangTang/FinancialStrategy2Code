@@ -5,6 +5,7 @@ import argparse
 import os
 import sys
 from utils import print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
+from rag_handler import RAGHandler
 
 parser = argparse.ArgumentParser()
 
@@ -39,9 +40,16 @@ else:
     print(f"[ERROR] Invalid paper format. Please select either 'JSON' or 'LaTeX.")
     sys.exit(0)
 
+######################################## RAG ########################################
+# 初始化 RAG
+rag = RAGHandler()
+# 检索相关知识
+context_str = rag.answer(paper_content)
+######################################## RAG ########################################
+
 plan_msg = [
         {'role': "system", "content": f"""You are an expert researcher and strategic planner with a deep understanding of experimental design and reproducibility in scientific research. 
-You will receive a Financial Strategy in {paper_format} format. 
+You will receive a research paper in {paper_format} format. 
 Your task is to create a detailed and efficient plan to reproduce the experiments and methodologies described in the paper.
 This plan should align precisely with the paper's methodology, experimental setup, and evaluation metrics. 
 
@@ -53,6 +61,9 @@ Instructions:
         {"role": "user",
          "content" : f"""## Paper
 {paper_content}
+
+Use the following financial knowledge and best practices as additional context to ensure the accuracy and quality of your plan:
+{context_str}
 
 ## Task
 1. We want to reproduce the method described in the attached paper. 

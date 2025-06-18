@@ -5,6 +5,7 @@ from tqdm import tqdm
 import re
 import sys
 import copy
+from rag_handler import RAGHandler
 from utils import extract_planning, content_to_json, extract_code_from_content, print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
 import argparse
 
@@ -51,10 +52,22 @@ todo_file_lst = task_list['Task list']
 done_file_lst = ['config.yaml']
 done_file_dict = {}
 
+######################################## RAG ########################################
+# 初始化 RAG
+rag = RAGHandler()
+# 检索相关知识
+query = f"Complete backtrader strategy example code for a {context_lst[2]} task."
+context_str = rag.answer(query)
+######################################## RAG ########################################
+
+
 code_msg = [
     {"role": "system", "content": f"""You are an expert researcher and software engineer with a deep understanding of experimental design and reproducibility in scientific research.
 You will receive a research paper in {paper_format} format, an overview of the plan, a Design in JSON format consisting of "Implementation approach", "File list", "Data structures and interfaces", and "Program call flow", followed by a Task in JSON format that includes "Required packages", "Required other language third-party packages", "Logic Analysis", and "Task list", along with a configuration file named "config.yaml". 
 Your task is to write code to reproduce the experiments and methodologies described in the paper. 
+
+Use the following financial knowledge and best practices as additional context to ensure the accuracy and quality of your code:
+{context_str}
 
 The code you write must be elegant, modular, and maintainable, adhering to Google-style guidelines. 
 The code must strictly align with the paper's methodology, experimental setup, and evaluation metrics. 

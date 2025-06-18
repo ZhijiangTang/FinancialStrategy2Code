@@ -3,6 +3,7 @@ import json
 import os
 from tqdm import tqdm
 import sys
+from rag_handler import RAGHandler
 from utils import extract_planning, content_to_json, print_response, print_log_cost, load_accumulated_cost, save_accumulated_cost
 import copy
 
@@ -78,9 +79,20 @@ logic_analysis_dict = {}
 for desc in task_list['Logic Analysis']:
     logic_analysis_dict[desc[0]] = desc[1]
 
+######################################## RAG ########################################
+# 初始化 RAG
+rag = RAGHandler()
+# 检索相关知识
+query = f" {context_lst[0]} "
+context_str = rag.answer(query)
+######################################## RAG ########################################
+
 analysis_msg = [
     {"role": "system", "content": f"""You are an expert researcher, strategic analyzer and software engineer with a deep understanding of experimental design and reproducibility in scientific research.
 You will receive a research paper in {paper_format} format, an overview of the plan, a design in JSON format consisting of "Implementation approach", "File list", "Data structures and interfaces", and "Program call flow", followed by a task in JSON format that includes "Required packages", "Required other language third-party packages", "Logic Analysis", and "Task list", along with a configuration file named "config.yaml". 
+
+Use the following financial knowledge and best practices as additional context to ensure the accuracy and quality of your analysis:
+{context_str}
 
 Your task is to conduct a comprehensive logic analysis to accurately reproduce the experiments and methodologies described in the research paper. 
 This analysis must align precisely with the paper’s methodology, experimental setup, and evaluation criteria.

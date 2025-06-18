@@ -1,0 +1,251 @@
+\documentclass[UTF8]{ctexart}
+
+\usepackage{geometry}
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% Code listing style
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{\bfseries 基于双均线交叉的量化交易策略研究}
+\author{Gemini AI}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+移动平均线（Moving Average, MA）是金融市场技术分析中应用最广泛的指标之一。本文旨在探讨并实现一种经典的量化交易策略——双均线交叉策略。我们首先回顾了移动平均线的理论基础，包括其发明者格兰威尔（Joseph E. Granville）提出的八大法则，以及其有效性的理论支撑——资产价格的均值回归特性。接着，本文详细阐述了双均线策略的逻辑核心，即通过短期均线和长期均线的交叉（“黄金交叉”与“死亡交叉”）来产生交易信号。最后，我们基于Python和`gm.api`量化框架，提供了一个完整的策略实现代码，并以螺纹钢期货（SHFE.rb2101）的分钟级数据进行了回测配置说明。本文为理解和实践双均线策略提供了一个系统性的框架。
+\end{abstract}
+
+\section{引言}
+
+移动平均线（Moving Average, MA），作为技术分析领域的基石，是投资者用于判断市场趋势、识别买卖时机的重要工具。它最早由美国投资专家格兰威尔（Joseph E. Granville）在20世纪中期提出，其核心思想是通过计算特定周期内价格的算术平均值，来平滑短期价格波动，揭示市场的主要运行趋势\cite{granville}。
+
+格兰威尔在其著作中提出了著名的“八大法则”，仅利用股价与单条移动平均线的相对位置和运动方向，便构建了一套完整的交易信号体系。其中，当价格由下向上突破均线时形成的“黄金交叉”（Golden Cross）和价格由上向下跌破均线时形成的“死亡交叉”（Death Cross），因其简洁有效，至今仍被广大投资者奉为圭臬。
+
+均线理论的有效性，可以从金融经济学的角度找到支撑。诺贝尔经济学奖得主Robert Shiller（1981）的研究发现，从长期来看，资产价格存在向其内在价值或长期均值回归的倾向\cite{shiller}。移动平均线正是对这种“均值”的近似刻画，从而为趋势跟踪和反转交易提供了理论依据。
+
+然而，传统的单均线策略存在一个显著缺陷——滞后性。由于MA是对历史数据的平均，其发出的交易信号往往晚于最佳的入场或离场点，尤其在震荡行情中容易产生“Whipsaw”（左右挨耳光）现象，导致频繁交易和亏损。为了克服这一缺陷，市场演化出了多种改进方法，其中最著名和最常用的便是本文将要深入探讨的“双均线交叉策略”。该策略通过引入两条不同周期的均线（一条短期，一条长期），利用它们之间的交叉来生成交易信号，以期过滤掉部分市场噪音，提高信号的可靠性。
+
+\section{策略原理与构建}
+
+\subsection{移动平均线}
+
+\subsubsection{定义}
+简单移动平均线（Simple Moving Average, SMA）是在特定时间周期 $N$ 内，对资产收盘价 $P$ 进行算术平均。其数学表达式为：
+$$
+SMA_N(t) = \frac{1}{N} \sum_{i=0}^{N-1} P_{t-i}
+$$
+其中，$P_{t-i}$ 表示在当前时间点 $t$ 之前的第 $i$ 个周期的收盘价。
+
+\subsubsection{格兰威尔八大法则}
+格兰威尔八大法则为移动平均线的应用奠定了基础，它系统性地描述了股价与均线在不同关系下所代表的市场意义。如图\ref{fig:granville}所示，这八大法则定义了四个买入点和四个卖出点。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{granville.png}
+    \caption{格兰威尔八大法则示意图（图片来源于网络）}
+    \label{fig:granville}
+\end{figure}
+
+\subsection{双均线交叉策略逻辑}
+双均线策略是对格兰威尔法则核心思想的提炼与改进。它不再观察价格与单条均线的关系，而是观察两条不同周期均线的相对关系，通常为一条短周期均线（如20周期）和一条长周期均线（如60周期）。
+\begin{itemize}
+    \item \textbf{短周期均线}：对近期价格变化反应更灵敏，代表了市场的短期动量。
+    \item \textbf{长周期均线}：对价格变化反应较迟钝，代表了市场的长期趋势。
+\end{itemize}
+该策略的交易信号完全基于这两条均线的交叉行为：
+\begin{enumerate}
+    \item \textbf{做多信号（黄金交叉）}：当短周期均线从下向上穿越长周期均线时，表明短期动量开始强于长期趋势，市场可能进入上升通道。此时，策略将执行买入开仓操作。
+    \item \textbf{做空信号（死亡交叉）}：当短周期均线从上向下穿越长周期均线时，表明短期动量开始弱于长期趋势，市场可能进入下降通道。此时，策略将执行卖出开仓（做空）操作。
+\end{enumerate}
+为了避免持有多空双向头寸，本策略在每次开新仓前，都会先将已有的反向持仓进行平仓。
+
+\section{策略实现与回测}
+
+本节将展示双均线策略的具体代码实现，并定义回测环境的各项参数。
+
+\subsection{回测设置}
+\begin{itemize}
+    \item \textbf{交易标的}: 螺纹钢2101合约 (SHFE.rb2101)
+    \item \textbf{数据频率}: 60秒 (1分钟) K线
+    \item \textbf{回测周期}: 2020-04-01 09:00:00 到 2020-05-31 15:00:00
+    \item \textbf{初始资金}: 30,000 人民币
+    \item \textbf{短周期均线}: 20周期
+    \item \textbf{长周期均线}: 60周期
+    \item \textbf{交易逻辑}: 市价单交易。每次开仓前先平掉所有已有持仓。
+\end{itemize}
+
+\subsection{Python代码实现}
+以下代码是使用`gm.api`和`talib`库实现的完整策略。代码结构清晰，主要包含三个函数：`init()`用于策略初始化，`on_bar()`是策略核心逻辑，在每个新的K线数据到来时触发，`on_order_status()`用于处理委托状态回报，确保平仓成功后再进行开仓，增强了策略的稳健性。
+
+\begin{lstlisting}[language=Python, caption={双均线策略Python实现代码}, label={code:strategy}]
+# coding=utf-8
+from __future__ import print_function, absolute_import
+from gm.api import *
+import talib
+
+'''
+本策略以SHFE.rb2101为交易标的，根据其一分钟(即60s频度）bar数据建立双均线模型，
+短周期为20，长周期为60，当短期均线由上向下穿越长期均线时做空，
+当短期均线由下向上穿越长期均线时做多,每次开仓前先平掉所持仓位，再开仓。
+注：为了适用于仿真和实盘，在策略中增加了一个“先判断是否平仓成功再开仓”的判断逻辑，
+以避免出现未平仓成功，可用资金不足的情况。
+回测数据为:SHFE.rb2101的60s频度bar数据
+回测时间为:2020-04-01 09:00:00到2020-05-31 15:00:00
+'''
+
+def init(context):
+    context.short = 20              # 短周期均线
+    context.long = 60               # 长周期均线
+    context.symbol = 'SHFE.rb2101'  # 订阅交易标的
+    context.period = context.long + 1 # 订阅数据滑窗长度
+    context.open_long = False       # 开多单标记
+    context.open_short = False      # 开空单标记
+    subscribe(context.symbol, '60s', count=context.period) # 订阅行情
+
+def on_bar(context, bars):
+    # 获取通过subscribe订阅的数据
+    prices = context.data(context.symbol, '60s', context.period, fields='close')
+    
+    # 利用talib库计算长短周期均线
+    short_avg = talib.SMA(prices.values.reshape(context.period), context.short)
+    long_avg = talib.SMA(prices.values.reshape(context.period), context.long)
+    
+    # 查询持仓
+    position_long = context.account().position(symbol=context.symbol, side=PositionSide_Long)
+    position_short = context.account().position(symbol=context.symbol, side=PositionSide_Short)
+    
+    # 死亡交叉：短均线下穿长均线，做空
+    # (即当前时间点短均线处于长均线下方，前一时间点短均线处于长均线上方)
+    if long_avg[-2] < short_avg[-2] and long_avg[-1] >= short_avg[-1]:
+        # 无多仓情况下，直接开空
+        if not position_long:
+            order_volume(symbol=context.symbol, volume=1, side=OrderSide_Sell, 
+                         position_effect=PositionEffect_Open, order_type=OrderType_Market)
+            print(f'{context.now} {context.symbol} 市价开空仓')
+        # 有多仓情况下，先平多，再开空(开空命令放在on_order_status里面)
+        else:
+            context.open_short = True
+            order_volume(symbol=context.symbol, volume=position_long.volume, side=OrderSide_Sell, 
+                         position_effect=PositionEffect_Close, order_type=OrderType_Market)
+            print(f'{context.now} {context.symbol} 市价平多仓，准备开空仓')
+
+    # 黄金交叉：短均线上穿长均线，做多
+    # (即当前时间点短均线处于长均线上方，前一时间点短均线处于长均线下方）
+    if short_avg[-2] < long_avg[-2] and short_avg[-1] >= long_avg[-1]:
+        # 无空仓情况下，直接开多
+        if not position_short:
+            order_volume(symbol=context.symbol, volume=1, side=OrderSide_Buy, 
+                         position_effect=PositionEffect_Open, order_type=OrderType_Market)
+            print(f'{context.now} {context.symbol} 市价开多仓')
+        # 有空仓的情况下，先平空，再开多(开多命令放在on_order_status里面)
+        else:
+            context.open_long = True
+            order_volume(symbol=context.symbol, volume=position_short.volume, side=OrderSide_Buy,
+                         position_effect=PositionEffect_Close, order_type=OrderType_Market)
+            print(f'{context.now} {context.symbol} 市价平空仓，准备开多仓')
+
+def on_order_status(context, order):
+    # 查看下单后的委托状态 (3:全成, 4:部分成交, 5:已撤, 6:拒单)
+    if order.status == OrderStatus_Filled:
+        # 如果是平仓委托全成
+        if order.position_effect == PositionEffect_Close:
+            # 如果之前标记了要开空仓
+            if context.open_short and order.side == OrderSide_Sell:
+                context.open_short = False
+                order_volume(symbol=context.symbol, volume=1, side=OrderSide_Sell, 
+                             position_effect=PositionEffect_Open, order_type=OrderType_Market)
+                print(f'{context.now} {context.symbol} 平多仓成功，市价开空仓')
+
+            # 如果之前标记了要开多仓
+            if context.open_long and order.side == OrderSide_Buy:
+                context.open_long = False
+                order_volume(symbol=context.symbol, volume=1, side=OrderSide_Buy, 
+                             position_effect=PositionEffect_Open, order_type=OrderType_Market)
+                print(f'{context.now} {context.symbol} 平空仓成功，市价开多仓')
+
+if __name__ == '__main__':
+    run(strategy_id='dual_moving_average_strategy',
+        filename='main.py',
+        mode=MODE_BACKTEST,
+        token='Your_Token_Here',
+        backtest_start_time='2020-04-01 09:00:00',
+        backtest_end_time='2020-05-31 15:00:00',
+        backtest_adjust=ADJUST_NONE,
+        backtest_initial_cash=30000,
+        backtest_commission_ratio=0.0001,
+        backtest_slippage_ratio=0.0001)
+
+\end{lstlisting}
+
+\subsection{代码逻辑解析}
+该策略的核心在于`on_bar`函数中的交叉判断逻辑。以死亡交叉为例，条件 `long_avg[-2] < short_avg[-2] and long_avg[-1] >= short_avg[-1]` 精确地捕捉了交叉发生的那个K线。`[-1]`代表当前最新完成的K线周期，而`[-2]`代表上一个周期。该条件意为：在上一个周期，短均线仍在长均线之上；而在当前周期，短均线已经等于或低于长均线。这个精确的定义保证了信号在交叉发生的瞬间被触发，且不会重复触发。
+
+此外，通过`on_order_status`回调函数对平仓委托进行监控，确保了“先平后开”逻辑的严密性，这在实盘交易中对于管理风险和资金至关重要。
+
+\section{结论与展望}
+
+本文详细阐述了一个基于双均线交叉的量化交易策略。从格兰威尔八大法则的历史渊源，到均值回归的理论基础，再到具体的策略逻辑设计和代码实现，我们构建了一个完整的、可执行的交易模型。该策略逻辑清晰、易于理解，是量化交易入门的经典范例。
+
+尽管双均线策略简单有效，但它并非完美无缺。在趋势明显的市场中表现较好，但在长期盘整的市场中，可能会因为频繁的无效交叉而导致亏损。未来的研究可以从以下几个方面对该策略进行优化：
+\begin{enumerate}
+    \item \textbf{参数优化}: 通过历史数据回测，寻找最优的短、长均线周期组合。
+    \item \textbf{增加过滤条件}: 结合其他技术指标（如ADX, RSI）来过滤掉震荡行情中的交易信号。
+    \item \textbf{动态周期调整}: 根据市场的波动性（如使用ATR指标）动态调整均线的计算周期。
+    \item \textbf{风险管理}: 引入止损（Stop-Loss）和止盈（Take-Profit）机制来控制单笔交易的风险和回报。
+\end{enumerate}
+
+通过不断地迭代和优化，这个基础策略可以演化成更加稳健和高效的交易系统。
+
+\begin{thebibliography}{9}
+    \bibitem{granville}
+    Granville, J. E. (1962). \textit{A Strategy of Daily Stock Market Timing for Maximum Profit}. Prentice-Hall.
+    
+    \bibitem{shiller}
+    Shiller, R. J. (1981). Do stock prices move too much to be justified by subsequent changes in dividends?. \textit{American Economic Review}, 71(3), 421-436.
+
+    \bibitem{baike}
+    部分背景资料来源于百度百科关于“格兰威尔八大法则”的词条。
+\end{thebibliography}
+
+\end{document}

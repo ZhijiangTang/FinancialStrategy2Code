@@ -1,0 +1,86 @@
+import pandas as pd
+import yaml
+
+class TurtleStrategy:
+    def __init__(self, config_path='config.yaml'):
+        # Load configuration from YAML
+        with open(config_path, 'r') as f:
+            config = yaml.safe_load(f)
+        
+        # Extract parameters from config
+        self.atr_period = config['strategy_parameters']['ATR_period']
+        self.system1_period = config['strategy_parameters']['system1_period']
+        self.system2_period = config['strategy_parameters']['system2_period']
+        self.risk_percent = config['strategy_parameters']['risk_percent']
+        self.point_value = config['strategy_parameters']['point_value']
+        self.short_take_profit_period = config['strategy_parameters']['short_take_profit_period']
+        self.long_take_profit_period = config['strategy_parameters']['long_take_profit_period']
+        self.trading_rules = {
+            'system1_priority': config['strategy_parameters'].get('system1_priority', 'both')
+        }
+
+    def calculate_atr(self, data: pd.DataFrame) -> pd.Series:
+        """
+        Calculate True Range (TR) and Average True Range (ATR) using the ATR_period from config.yaml
+        TR = max(High - Low, abs(High - Previous_Close), abs(Low - Previous_Close)
+        ATR = TR.rolling(window=self.atr_period).mean()
+        """
+        # Calculate True Range (TR)
+        data['Prev_Close'] = data['Close'].shift(1)
+        data['TR'] = data.apply(
+            lambda row: max(
+                row['High'] - row['Low'],
+                abs(row['High'] - row['Prev_Close'],
+                abs(row['Low'] - row['Prev_Close']
+            ),
+            axis=1
+        )
+        
+        # Handle TR for first period (forward fill)
+        data['TR'] = data['TR'].fillna(method='ffill')
+        
+        # Calculate ATR as rolling average
+        data['ATR'] = data['TR'].rolling(window=self.atr_period).mean()
+        
+        # Clean up temporary columns
+        data.drop(columns=['Prev_Close'], inplace=True)
+        return data['ATR']
+
+    def generate_signals(self, data: pd.DataFrame) -> pd.DataFrame:
+        """
+        Generate trading signals based on Donchian Channels and ATR
+        - System1: 20-day突破 (20日最高/最低价)
+        - System2: 55-day突破 (55日最高/最低价)
+        - Signals: Long_Entry, Short_Entry
+        """
+        # Calculate Donchian Channels
+        data[f'System1_High'] = data['High'].rolling(window=self.system1_period).max()
+        data[f'System1_Low'] = data['Low'].rolling(window=self.system1_period).min()
+        data[f'System2_High'] = data['High'].rolling(window=self.system2_period).max()
+        data[f'System2_Low'] = data['Low'].rolling(window=self.system2_period).min()
+        
+        # Generate entry signals using closing price
+        data['Long_Entry'] = (data['Close'] > data[f'System1_High']) | (data['Close'] > data[f'System2_High'])
+        data['Short_Entry'] = (data['Close'] < data[f'System1_Low']) | (data['Close'] < data[f'System2_Low')
+        
+        # Calculate ATR for signals
+        data['ATR'] = self.calculate_atr(data)
+        
+        # Add a marker for multiple signals (for BacktestEngine to handle conflicts)
+        data['Signal_Type'] = None
+        data.loc[data['Long_Entry'], 'Signal_Type'] = 'Long'
+        data.loc[data['Short_Entry'], 'Signal_Type'] = 'Short'
+        
+        return data
+
+    def calculate_position_units(self, capital: float, atr: float) -> int:
+        """
+        Calculate position units based on: 
+        unit = (risk_percent * capital) / (ATR * point_value)
+        """
+        if atr <= 0:
+            return 0
+        
+        # Calculate unit size with explicit type handling
+        unit = int((self.risk_percent * capital) / (atr * self.point_value)
+        return max(unit, 0)  # Ensure non-negative units
