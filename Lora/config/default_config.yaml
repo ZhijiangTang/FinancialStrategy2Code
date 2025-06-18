@@ -1,0 +1,21 @@
+# default_config.yaml
+
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+  gradient_accumulation_steps: 8
+  offload_optimizer_device: none
+  offload_param_device: none
+  zero3_save_16bit_model: true
+  zero_stage: 2
+distributed_type: MULTI_GPU
+downcast_bf16: 'no'
+dynamo_backend: NO
+gpu_ids: all  # 使用所有 GPU
+machine_rank: 0
+main_training_loop: ''
+main_process_ip: ''
+main_process_port: 0
+mixed_precision: bf16  # 推荐 bfloat16 加速训练
+num_machines: 1
+num_processes: 4  # 设置为你的 GPU 数量（如 4 张卡）
+use_cpu: false
