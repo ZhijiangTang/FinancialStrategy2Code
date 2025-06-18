@@ -1,6 +1,6 @@
 #### 安装好 requirement.txt 下的 python 环境
 
-#### 后执行 app.exe 就好 app.exe 在 server 目录下
+#### 后执行 app.exe(用`go build -o app.exe agent/server/main.go`生成) 就好 app.exe 在 server 目录下
 
 #### 前端需要用npm install 安装依赖
 
