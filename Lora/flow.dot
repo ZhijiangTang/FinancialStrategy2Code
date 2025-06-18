@@ -1,0 +1,26 @@
+digraph FinancialStrategyFlow {
+    rankdir=LR; // 横向布局
+
+    node [shape=box, style="rounded", color="#4CAF50"];
+
+    Start [label="项目开始"];
+    DataPrep [label="数据准备"];
+    LoRA [label="LoRA 微调"];
+    LoadModel [label="加载预训练模型"];
+    ConfigTrain [label="配置训练参数"];
+    Train [label="启动训练"];
+    SaveCheckpoint [label="保存检查点"];
+    Inference [label="推理阶段"];
+    Eval [label="评估结果"];
+    End [label="项目结束"];
+
+    Start -> DataPrep;
+    DataPrep -> LoRA;
+    LoRA -> LoadModel;
+    LoadModel -> ConfigTrain;
+    ConfigTrain -> Train;
+    Train -> SaveCheckpoint;
+    SaveCheckpoint -> Inference;
+    Inference -> Eval;
+    Eval -> End;
+}
